@@ -2,6 +2,9 @@
 
 Kaiyuan Lan (`z5444541`)
 
+- **Live app:** https://z5444541projectb-r9um2cjlkbqb35gndanq4f.streamlit.app/
+- **Public repo:** https://github.com/jas-cell/z5444541_projectB
+
 `Signal Harbour` is a Streamlit investment dashboard built for FINS3645 Part B. The app offers systematic equity, crypto, and combined funds, displays each fund's realised out-of-sample performance and latest holdings, provides an allocation sandbox, and surfaces a sector-level news sentiment index built from mapped equity headlines.
 
 ## What this project contains
@@ -67,4 +70,4 @@ The deployed app does not run VADER or recompute backtests. It reads the committ
 
 ## Deployment note
 
-For hand-in, this folder becomes its own GitHub repository and Streamlit app. The final browser deploy still needs the student's own GitHub and Streamlit login. The deployment steps are summarised in `docs/STUDENT_DEPLOY.md`.
+Deployed for hand-in: public repo https://github.com/jas-cell/z5444541_projectB, live app https://z5444541projectb-r9um2cjlkbqb35gndanq4f.streamlit.app/ (entrypoint `streamlit_app.py`, deployed from `main` on Streamlit Community Cloud). The deployment steps followed are summarised in `docs/STUDENT_DEPLOY.md`.

@@ -38,5 +38,5 @@ Authorship: I own the assessed report prose and final evaluations. Package revie
 | Gate table above | All Pass |
 | `kaiyuan_review_label` filled by me on all 120 rows | Done |
 | Delete `__pycache__` / `.DS_Store` before zip | Open before hand-in zip |
-| Public GitHub + live Streamlit | Student-owned — `DEPLOY.md` |
+| Public GitHub + live Streamlit | Done — https://github.com/jas-cell/z5444541_projectB + https://z5444541projectb-r9um2cjlkbqb35gndanq4f.streamlit.app/ |
 | Hand-in upload | Student-owned; agent does not publish without explicit instruction |
