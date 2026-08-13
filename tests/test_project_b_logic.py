@@ -239,7 +239,7 @@ def test_fusion_respects_weight_cap():
     assert tilted["weight"].max() <= 0.55 + 1e-8
 
 
-def test_validation_sample_leaves_kaiyuan_labels_blank():
+def test_validation_sample_builder_starts_blank():
     sample = pd.DataFrame({
         "trade_date": pd.to_datetime(["2020-01-06"] * 6),
         "ticker": [f"T{i}" for i in range(6)],
@@ -263,6 +263,23 @@ def test_validation_sample_leaves_kaiyuan_labels_blank():
     assert set(out["split"]).issubset({"development", "holdout"})
     summary = sentiment.pseudo_label_diagnostic_summary(out)
     assert summary["label_source"].eq("automated_rule_based_pseudo_label").all()
+
+
+def test_committed_kaiyuan_labels_are_filled_and_not_pseudo():
+    from pathlib import Path
+
+    path = Path(__file__).resolve().parents[1] / "results" / "data" / "headline_validation_sample.csv"
+    df = pd.read_csv(path)
+    assert len(df) == 120
+    lab = df["kaiyuan_review_label"].fillna("").astype(str).str.strip().str.lower()
+    assert lab.ne("").all()
+    assert set(lab) <= {"positive", "neutral", "negative"}
+    pseudo = df["title"].map(sentiment._rule_based_pseudo_label)
+    assert not (lab.to_numpy() == pseudo.to_numpy()).all()
+    blank = df.copy()
+    blank["kaiyuan_review_label"] = ""
+    restored = sentiment.preserve_kaiyuan_review_labels(blank, path)
+    assert restored["kaiyuan_review_label"].fillna("").astype(str).str.strip().ne("").all()
 
 
 def test_pseudo_label_does_not_match_cut_inside_executive():

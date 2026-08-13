@@ -36,4 +36,4 @@ Week 8 teaches that a custom finance lexicon must be documented, agreement-filte
 ## Limits
 
 - Course fear/greed index construction is a teaching path; Signal Harbour’s product index remains the lagged sector/context-weighted design required by Project B.
-- Vendored lexicons are for benchmark reproduction only; they are not claimed as original Signal Harbour work.
+- Vendored lexicons reproduce the Week 9 benchmark and sit under the primary model as its base lexicon; they are not claimed as original Signal Harbour work.

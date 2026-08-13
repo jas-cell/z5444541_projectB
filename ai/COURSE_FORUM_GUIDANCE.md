@@ -1,7 +1,7 @@
 # Course Forum Guidance — Signal Harbour Project B
 
 Student: Kaiyuan Lan (`z5444541`)  
-Source status: **user-supplied course-forum evidence** pasted by Kaiyuan into the Cursor prompt on 2026-08-09.  
+Source status: **user-supplied course-forum evidence** pasted by me into the Cursor prompt on 2026-08-09.  
 The coding assistant did **not** independently access Ed Discussion / the course forum.
 
 ---

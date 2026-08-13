@@ -346,7 +346,11 @@ def main() -> None:
     model_summary = sentiment.model_comparison_summary(scored_sample)
     lexicon_audit = sentiment.lexicon_audit_table()
     validation_sample = sentiment.build_validation_sample(scored_sample, n=120)
+    validation_sample = sentiment.preserve_kaiyuan_review_labels(
+        validation_sample, DATA_DIR / "headline_validation_sample.csv"
+    )
     pseudo_diag = sentiment.pseudo_label_diagnostic_summary(validation_sample)
+    kaiyuan_diag = sentiment.kaiyuan_label_agreement_summary(validation_sample)
 
     coverage = scores.groupby("sector", observed=True).agg(
         ticker_days=("ticker", "size"),
@@ -445,6 +449,8 @@ def main() -> None:
     open_source_method.to_csv(TABLE_DIR / "open_source_method_comparison.csv", index=False)
     validation_sample.to_csv(DATA_DIR / "headline_validation_sample.csv", index=False)
     pseudo_diag.to_csv(TABLE_DIR / "headline_pseudo_label_diagnostic.csv", index=False)
+    if not kaiyuan_diag.empty:
+        kaiyuan_diag.to_csv(TABLE_DIR / "headline_kaiyuan_label_agreement.csv", index=False)
 
     # Explainability snapshot: latest trade date, fields aligned to signal_date.
     latest_date = ticker_signal["trade_date"].max()

@@ -6,7 +6,7 @@ This log records how I used a coding assistant on FINS3645 Project B. It is chro
 
 Authorship note: I own the assessed report, critiques, and final evaluations. Package reviews are mine, optionally with third-party Claude suggestions. The coding assistant implements under my direction.
 
-There is no Entry 5: an earlier report-builder packaging note was dropped from this coding log because the assessed report is authored by me in `report/report.docx` / `report/report.pdf`, not by a Python narrative module.
+Entry 5 - Report typesetting (restored note): I drafted the report prose; the coding assistant implemented `report/build_academic_docx.py` and `report/build_academic_pdf.py`, which typeset my text into `report/report.docx` / `report/report.pdf`. Numbers in the prose are transcribed from and checked against the `results/` CSVs (the scripts do not read the CSVs at build time). Both scripts are retained in `report/`. An earlier version of this log dropped this entry and the working tree briefly deleted the scripts; that was wrong, and both are restored for a truthful chronology. On 13 August the retained scripts were re-synchronised to the final shipped text (the labelled-validation passages), since the intermediate script version that produced the 13 August artifacts had been lost in the deletion; the docx build now reproduces the shipped report text exactly.
 
 
 ## Entry 1 - Project setup and baseline read
@@ -77,11 +77,11 @@ There is no Entry 5: an earlier report-builder packaging note was dropped from t
 | Actual prompt/action | I supplied a mandatory addendum with two Ed-forum exchanges (pasted by me; the assistant did not scrape Ed), required continuity audit, GitHub research, innovation scorecard, and Context-Weighted finVADER protocol. Under my direction the assistant moved the agent root to `z5444541_projectB`, read final Project A, drafted the continuity/research docs I requested, and implemented the upgraded sentiment/fusion/app path. |
 | Prompt significance | Meaningful direction and substantive production. |
 | AI output used | Continuity and research drafts; rewritten `src/sentiment.py`; Part A Attention Pulse ported into `src/features.py`; fusion renamed to context-weighted path; Streamlit explainability tab; new innovation tables/figures in the runner. |
-| Student review | I reviewed the regenerated model tables later; Entry 10 restored blank `kaiyuan_review_label` and demoted keyword labels to an automated pseudo-label diagnostic only. |
+| Student review | I reviewed the regenerated model tables later; Entry 10 removed invented keyword labels from `kaiyuan_review_label`. I later filled that column myself on all 120 headlines. |
 | Problem caught | Earlier Part B draft treated a small finance lexicon as the innovation and did not use Attention Pulse. Week 9 finVADER file was not found locally at that time. |
 | Diagnosis | Under concurrent marking and the forum guidance I pasted, a shallow lexicon update leaves continuity and originality thin. Reconstructing Week 9 from memory would be dishonest. |
 | Change | I selected Context-Weighted finVADER as primary innovation; kept unchanged VADER and open-source FinVADER-style scoring as benchmarks; deferred HRP/shrinkage as primary innovations. |
-| Verification | Unit tests cover lag, Attention Pulse past-only construction, phrase lift, and blank human labels. Pipeline regenerated in later entries. |
+| Verification | Unit tests cover lag, Attention Pulse past-only construction, and phrase lift. Pipeline regenerated in later entries. Human labels were filled later on the 120-headline sheet. |
 
 
 ## Entry 7 - Week 8/9 course materials supplied; Week 9 finVADER benchmark locked
@@ -131,7 +131,7 @@ There is no Entry 5: an earlier report-builder packaging note was dropped from t
 ### Classification notes
 - Silent optimiser stall / inconsistent Sharpe / constant-weight “monthly” engine: AI modelling errors.
 - “Augmented finVADER” starting from plain VADER: naming overclaim (AI + weak prompt specificity).
-- Blank validation labels: incomplete student review (left blank on purpose; automated pseudo-label column is diagnostic only).
+- Blank validation labels at that date: incomplete student review (later filled by me on all 120 rows; automated pseudo-label column remains diagnostic only).
 
 
 ## Entry 10 - Second manual review: false human labels and remaining blockers
@@ -141,8 +141,8 @@ There is no Entry 5: an earlier report-builder packaging note was dropped from t
 | Objective | Correct overclaims introduced while responding to the first review. |
 | Actual prompt/action | My second manual review (again with third party Claude suggestions) found: keyword labels written into `kaiyuan_review_label` and described as human validation; wrong attribution in the AI pack; ablation on plain VADER; sector index ignoring no-news neutrals; turnover timing bug; mixed Allocate dropping crypto weekends. I ordered fixes. |
 | Prompt significance | Meaningful correction of attribution and modelling honesty. |
-| AI output used | Blank `kaiyuan_review_label`; renamed automated `rule_based_pseudo_label` diagnostic; Week-9-base ablation; complete-grid sector index; post-return turnover; mixed union calendar; updated evidence notes. |
-| Student review | I confirmed inventing labels under my name violated `CLAUDE.md` and was worse than a blank column; required correct attribution (my review + third party Claude suggestions). |
+| AI output used | Keyword labels stripped from `kaiyuan_review_label` at that step (later filled by me on all 120 headlines); renamed automated `rule_based_pseudo_label` diagnostic; Week-9-base ablation; complete-grid sector index; post-return turnover; mixed union calendar; updated evidence notes. |
+| Student review | I confirmed inventing labels under my name violated `CLAUDE.md` and was worse than a blank column; required correct attribution (my review + third party Claude suggestions). I later filled `kaiyuan_review_label` myself on all 120 headlines. |
 | Problem caught | Pseudo-labels mislabelled as human; AI-log attribution error; ablation base wrong; sector index incomplete; turnover understated; Allocate calendar inconsistent. |
 | Diagnosis | Pressure to “complete validation” produced deceptive naming. Honesty requires blank student labels or explicit automated-diagnostic language. |
 | Change | Implemented the accepted correction order; removed human-agreement claims from assessed outputs. |

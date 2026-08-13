@@ -445,7 +445,9 @@ def _rule_based_pseudo_label(title: str) -> str:
 def build_validation_sample(scored_sample: pd.DataFrame, n: int = 120) -> pd.DataFrame:
     """Stratified model-comparison worksheet for optional student review.
 
-    ``kaiyuan_review_label`` is left blank on purpose. An automated
+    ``kaiyuan_review_label`` starts blank in a fresh sample. Filled labels from a
+    prior worksheet are merged back by (trade_date, ticker, title) so a rebuild
+    does not wipe a completed review. An automated
     ``rule_based_pseudo_label`` column may be attached for diagnostic contrast only;
     it must never be described as human validation.
     """
@@ -484,7 +486,7 @@ def build_validation_sample(scored_sample: pd.DataFrame, n: int = 120) -> pd.Dat
         np.where(out["signal_harbour"] < -0.05, "negative", "neutral"),
     )
     out["rule_based_pseudo_label"] = out["title"].map(_rule_based_pseudo_label).astype("string")
-    # Blank on purpose — do not invent student review labels in code.
+    # Fresh sample starts blank; preserve_kaiyuan_review_labels restores filled reviews.
     out["kaiyuan_review_label"] = pd.Series([""] * len(out), dtype="string")
     rng = np.random.default_rng(5444541)
     mask = rng.random(len(out)) < 0.70
@@ -517,5 +519,62 @@ def pseudo_label_diagnostic_summary(review_sample: pd.DataFrame) -> pd.DataFrame
                 "pseudo_neutral_share": float(labels.eq("neutral").mean()),
                 "pseudo_positive_share": float(labels.eq("positive").mean()),
                 "label_source": "automated_rule_based_pseudo_label",
+            })
+    return pd.DataFrame(rows)
+
+
+def preserve_kaiyuan_review_labels(sample: pd.DataFrame, prior_path) -> pd.DataFrame:
+    """Restore filled student labels from a prior worksheet. Never copy the pseudo-label."""
+
+    out = sample.copy()
+    path = Path(prior_path)
+    if not path.exists() or "kaiyuan_review_label" not in out.columns:
+        return out
+    prev = pd.read_csv(path)
+    if "kaiyuan_review_label" not in prev.columns:
+        return out
+    keys = ["trade_date", "ticker", "title"]
+    if any(c not in prev.columns for c in keys):
+        return out
+    prev = prev[keys + ["kaiyuan_review_label"]].copy()
+    prev["trade_date"] = pd.to_datetime(prev["trade_date"]).dt.strftime("%Y-%m-%d")
+    out["_td"] = pd.to_datetime(out["trade_date"]).dt.strftime("%Y-%m-%d")
+    prev = prev.rename(columns={"trade_date": "_td", "kaiyuan_review_label": "_saved_label"})
+    merged = out.merge(prev, on=["_td", "ticker", "title"], how="left")
+    saved = merged["_saved_label"].fillna("").astype(str).str.strip()
+    current = merged["kaiyuan_review_label"].fillna("").astype(str)
+    merged["kaiyuan_review_label"] = pd.Series(
+        np.where(saved.ne(""), saved, current), index=merged.index, dtype="string"
+    )
+    return merged.drop(columns=["_td", "_saved_label"])
+
+
+def kaiyuan_label_agreement_summary(review_sample: pd.DataFrame) -> pd.DataFrame:
+    """Agreement of model buckets with filled kaiyuan_review_label (human ground truth)."""
+
+    df = review_sample.copy()
+    labels = df["kaiyuan_review_label"].fillna("").astype(str).str.strip().str.lower()
+    df = df.loc[labels.isin(["positive", "neutral", "negative"])].copy()
+    rows = []
+    for model in ["base_vader", "week9_finvader", "signal_harbour"]:
+        bucket = np.where(
+            df[model] > 0.05, "positive",
+            np.where(df[model] < -0.05, "negative", "neutral"),
+        )
+        for split in ["development", "holdout", "all"]:
+            part = df if split == "all" else df.loc[df["split"].eq(split)]
+            if part.empty:
+                continue
+            lab = part["kaiyuan_review_label"].astype(str).str.strip().str.lower()
+            pred = pd.Series(bucket, index=df.index).loc[part.index]
+            rows.append({
+                "model": model,
+                "split": split,
+                "n": int(len(part)),
+                "agreement_with_kaiyuan_label": float((lab.to_numpy() == pred.to_numpy()).mean()),
+                "kaiyuan_negative_share": float(lab.eq("negative").mean()),
+                "kaiyuan_neutral_share": float(lab.eq("neutral").mean()),
+                "kaiyuan_positive_share": float(lab.eq("positive").mean()),
+                "label_source": "kaiyuan_review_label",
             })
     return pd.DataFrame(rows)

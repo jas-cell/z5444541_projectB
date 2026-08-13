@@ -28,7 +28,12 @@ check(bool(m), f"folder name '{name}' is valid",
 part = m.group(1) if m else None
 
 for rel in ["README.md", "SUBMISSION_CHECKLIST.md", "ai",
-            "context/DATA_GUIDE.md", "src/data_access.py", "report"]:
+            "context/DATA_GUIDE.md", "src/data_access.py", "report",
+            "THIRD_PARTY_NOTICES.md",
+            "src/vendor/course_finvader/LICENSE_Apache-2.0.txt",
+            "src/vendor/course_finvader/NOTICE.md",
+            "report/build_academic_docx.py",
+            "report/build_academic_pdf.py"]:
     check((ROOT / rel).exists(), f"{rel} present", f"missing {rel}")
 
 # At least one agent file must be your own (you only use one tool, so both need

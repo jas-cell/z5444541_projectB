@@ -80,5 +80,5 @@ I am the sole author of the assessed report prose, economic interpretation, crit
 | Item | Status |
 |---|---|
 | Public GitHub repo + live Streamlit URL | Student-owned — follow `DEPLOY.md` |
-| Optional: fill `kaiyuan_review_label` by hand | Optional / blank by design |
+| `kaiyuan_review_label` filled by me, n=120 | Done — `results/data/headline_validation_sample.csv` |
 | Hand-in zip after deleting `__pycache__` / `.DS_Store` | Student-owned |

@@ -555,8 +555,9 @@ def build() -> Path:
     body(
         doc,
         "Table 4 and Figure A8 compare polarity shares across a 4,000-headline sample. A lower neutral share is "
-        "only a distributional observation, not evidence of better prediction. The 120-headline worksheet "
-        "can support later labelling, but its review column is blank on purpose and the pseudo-label field is "
+        "only a distributional observation, not evidence of better prediction. I labelled the 120-headline "
+        "worksheet myself. Signal Harbour buckets agree with those labels on 60.8% of the full sample "
+        "(56.0% development, 68.9% holdout; n=120). The automated pseudo-label field is "
         "not treated as ground truth. Figure A9 looks at component effects through ablation on the Week 9 "
         "analyser and does not report labelled precision or recall. On the 800-headline ablation sample, "
         "removing neutral overrides has no effect. <i>no_neutral_overrides</i> matches <i>full_signal_harbour</i> "
@@ -753,9 +754,10 @@ def build() -> Path:
     )
     body(
         doc,
-        "<b>Distributional, not labelled, sentiment evidence.</b> The model comparison rests on polarity shares "
-        "and the Week 9 ablation. Because the 120-headline review column remains blank, this report does not "
-        "claim labelled precision or recall.",
+        "<b>Labelled sentiment evidence is a small worksheet, not a precision claim.</b> I labelled all 120 "
+        "headlines in <i>kaiyuan_review_label</i>. Agreement with Signal Harbour buckets is 60.8% on that sheet "
+        "(headline_kaiyuan_label_agreement.csv). That is a polarity-match rate on n=120, not labelled precision "
+        "or recall.",
     )
     body(
         doc,
@@ -774,9 +776,10 @@ def build() -> Path:
     )
     body(
         doc,
-        "If I extended the project, I would make three changes. First, I would complete the review column and "
-        "report labelled validation statistics. Second, I would apply the turnover-cost grid from Table 5 to "
-        "every fund family so that Recommendation 1 is tested under the same frictions. Third, I would publish "
+        "If I extended the project, I would make three changes. First, I would apply the turnover-cost grid "
+        "from Table 5 to every fund family so that Recommendation 1 is tested under the same frictions. Second, "
+        "I would expand the labelled worksheet beyond n=120 before treating polarity agreement as a "
+        "model-selection statistic. Third, I would publish "
         "the public GitHub repository and Streamlit deployment, then resolve any remaining theme issues before "
         "submission. Those steps would improve validation and delivery without altering the central result that "
         "the sentiment overlay is economically flat to negative in this sample.",

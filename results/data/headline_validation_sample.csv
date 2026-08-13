@@ -1,121 +1,121 @@
 trade_date,ticker,sector,title,year,base_bucket,base_vader,week9_finvader,signal_harbour,contributing_terms,changed,model_bucket_signal_harbour,rule_based_pseudo_label,kaiyuan_review_label,split,sample_role
-2020-02-11,TMUS,Comm,Daily Markets: Are Coronavirus Worries Behind Us? What This Means For Investors,2020,negative,-0.4215,-0.4215,-0.4215,,False,negative,neutral,,development,model_comparison_worksheet
-2020-03-03,TMUS,Comm,Invesco S&P 500 Equal Weight ETF Experiences Big Outflow,2020,neutral,0.0,0.0323,0.0323,,False,neutral,neutral,,development,model_comparison_worksheet
-2020-11-12,T,Comm,4 Dividend Stocks With Yields Over 5%,2020,neutral,0.0,0.0,0.2263,dividend,True,positive,neutral,,development,model_comparison_worksheet
-2021-01-25,T,Comm,3 High-Yield Dividend Stocks I'd Buy Right Now,2021,neutral,0.0,0.0284,0.2523,dividend,True,positive,neutral,,development,model_comparison_worksheet
-2021-01-29,TMUS,Comm,3 Dividend Stocks That Could Pay You for the Rest of Your Life,2021,negative,-0.1027,0.0181,0.2429,dividend,True,positive,neutral,,development,model_comparison_worksheet
-2022-01-06,T,Comm,U.S. flights still face risks from new 5G service -FAA,2022,negative,-0.2732,-0.3517,-0.3517,,False,negative,neutral,,development,model_comparison_worksheet
-2022-04-29,TMUS,Comm,"Top Research Reports for T-Mobile, Deere & PayPal",2022,positive,0.2023,0.0129,0.0129,,False,neutral,neutral,,development,model_comparison_worksheet
-2023-02-06,EA,Comm,What's Next For Electronic Arts Stock After 10% Cut In A Week Following Dismal Q3?,2023,negative,-0.7269,-0.0168,-0.0168,,False,neutral,negative,,development,model_comparison_worksheet
-2023-06-02,CMCSA,Comm,Comcast (CMCSA) Shares Cross 3% Yield Mark,2023,positive,0.296,0.296,0.296,,False,positive,neutral,,development,model_comparison_worksheet
-2020-01-30,KO,Consumer,7 Consumer Defensive Stocks Moving In Thursday's Pre-Market Session,2020,neutral,0.0258,-0.0052,-0.0052,,False,neutral,neutral,,development,model_comparison_worksheet
-2021-01-13,DIS,Consumer,"Netflix Still Dominates Streaming, but Disney Steals Market Share",2021,negative,-0.3716,-0.6525,-0.6525,,False,negative,neutral,,development,model_comparison_worksheet
-2021-09-27,NKE,Consumer,3 International Tech Stocks to Buy Right Now,2021,neutral,0.0,0.0284,0.0284,,False,neutral,neutral,,development,model_comparison_worksheet
-2021-12-06,DIS,Consumer,Disney's Streaming Budget Already Rivals That of Netflix,2021,neutral,0.0,0.0,0.0,,False,neutral,neutral,,development,model_comparison_worksheet
-2022-01-05,KO,Consumer,3 Dividend Giants to Pad Your Income in 2022,2022,neutral,0.0,0.0155,0.2406,dividend,True,positive,neutral,,development,model_comparison_worksheet
-2022-10-31,DIS,Consumer,"Shanghai Disney shuts over COVID, visitors unable to leave",2022,negative,-0.0516,-0.0155,-0.0155,,False,neutral,neutral,,development,model_comparison_worksheet
-2021-11-02,CVX,Energy,"Icahn's CVR moves forward with renewable fuel plans, eyes state incentives",2021,positive,0.3182,0.3313,0.3313,,False,positive,neutral,,development,model_comparison_worksheet
-2022-02-15,COP,Energy,These Are The Ten Biggest Crude Oil Production Companies,2022,negative,-0.5719,-0.564,0.0142,crude,True,neutral,neutral,,development,model_comparison_worksheet
-2022-08-19,CVX,Energy,"Zacks Value Investor Highlights: Chevron, Occidental Petroleum, Apple, Activision Blizzard and Amazon",2022,positive,0.4767,0.195,0.195,,False,positive,neutral,,development,model_comparison_worksheet
-2023-02-16,OXY,Energy,Interesting OXY Put And Call Options For April 21st,2023,positive,0.4019,0.0142,0.0142,,False,neutral,neutral,,development,model_comparison_worksheet
-2023-04-28,CVX,Energy,Chevron (CVX) Q1 2023 Earnings Call Transcript,2023,neutral,0.0,0.0,0.0,,False,neutral,neutral,,development,model_comparison_worksheet
-2023-06-20,OXY,Energy,Investors Heavily Search Occidental Petroleum Corporation (OXY): Here is What You Need to Know,2023,neutral,0.0,0.0,0.0,,False,neutral,neutral,,development,model_comparison_worksheet
-2021-06-11,V,Financials,"At $232, Is Visa Stock Still Attractive?",2021,positive,0.4404,0.0168,0.0168,,False,neutral,neutral,,development,model_comparison_worksheet
-2021-06-17,GS,Financials,Market Down? Here's 1 Stock to Own for the Long Term,2021,neutral,0.0,-0.3612,-0.3612,,False,negative,negative,,development,model_comparison_worksheet
-2023-06-01,GS,Financials,Why Kingsoft Cloud Holdings Stock Leaped 20% Higher Today,2023,neutral,0.0,0.3643,0.3643,,False,positive,neutral,,development,model_comparison_worksheet
-2020-02-24,GILD,Healthcare,Gilead Sciences Option Alert: Mar 20 $70 Calls Sweep (2) near the Ask: 500 @ $4.5 vs 18026 OI; Ref=$72.8664,2020,positive,0.296,0.0065,0.0065,,False,neutral,neutral,,development,model_comparison_worksheet
-2020-04-16,ABT,Healthcare,Abbott Laboratories Q1 adjusted earnings Beat Estimates,2020,neutral,0.0,0.3612,0.5918,beat|beat estimates,True,positive,positive,,development,model_comparison_worksheet
-2022-05-25,ABT,Healthcare,U.S. FDA defends baby formula shortage response in Congress,2022,negative,-0.25,-0.0129,-0.0129,,False,neutral,neutral,,development,model_comparison_worksheet
-2023-04-10,ABBV,Healthcare,Is Invesco Dynamic Pharmaceuticals ETF (PJP) a Strong ETF Right Now?,2023,positive,0.7096,0.634,0.634,,False,positive,neutral,,development,model_comparison_worksheet
-2023-09-25,MRK,Healthcare,2 Undervalued Dividend Stocks with 5% Yields To Buy Near 52-Week Lows,2023,negative,-0.2023,-0.2083,0.0194,dividend,True,neutral,neutral,,development,model_comparison_worksheet
-2020-04-08,BA,Industrials,Wall St climbs on hopes of U.S. outbreak nearing peak,2020,positive,0.4215,0.4243,0.4243,,False,positive,neutral,,development,model_comparison_worksheet
-2020-04-29,MMM,Industrials,"B of A Securities Maintains Neutral on 3M, Raises Price Target to $170",2020,positive,0.296,0.296,0.296,,False,positive,positive,,development,model_comparison_worksheet
-2021-01-28,GE,Industrials,Is 3D Printing Finally Ready For Takeoff? Companies to Watch,2021,positive,0.3612,0.0168,0.0168,,False,neutral,neutral,,development,model_comparison_worksheet
-2021-05-11,BA,Industrials,"EXCLUSIVE-Airbus tells suppliers to plan for 18% output hike in 2022, sources say",2021,neutral,0.0,0.0103,0.0103,,False,neutral,neutral,,development,model_comparison_worksheet
-2022-02-01,UPS,Industrials,US STOCKS-Wall St overcomes choppy trading to close higher,2022,neutral,0.0,0.3453,0.3453,,False,positive,neutral,,development,model_comparison_worksheet
-2022-02-23,UPS,Industrials,UPS loses $2 billion euro claim for EU veto on TNT bid,2022,negative,-0.3182,-0.4648,-0.4648,,False,negative,neutral,,development,model_comparison_worksheet
-2022-05-25,MMM,Industrials,4 Safe Dividend Stocks Still Offering Mighty Solid Yield,2022,positive,0.5423,0.3889,0.5477,dividend,True,positive,neutral,,development,model_comparison_worksheet
-2023-01-13,CAT,Industrials,Small Caps to Provide Big Performance in 2023,2023,neutral,0.0,0.0271,0.0271,,False,neutral,neutral,,development,model_comparison_worksheet
-2023-04-04,UPS,Industrials,2 Railroad Stocks Impressing With Their Solid Dividend Yield,2023,positive,0.6249,0.7184,0.7845,dividend,True,positive,neutral,,development,model_comparison_worksheet
-2023-04-18,CAT,Industrials,Caterpillar (CAT) Stock Sinks As Market Gains: What You Should Know,2023,positive,0.34,0.34,0.34,,False,positive,neutral,,development,model_comparison_worksheet
-2020-01-30,SHW,Materials,Sherwin-Williams Co Q4 adjusted earnings Miss Estimates,2020,negative,-0.1531,-0.0065,-0.3612,miss,True,negative,negative,,development,model_comparison_worksheet
-2020-02-25,NEM,Materials,"B. Riley FBR Maintains Buy on Newmont, Raises Price Target to $54",2020,neutral,0.0,0.009,0.009,,False,neutral,positive,,development,model_comparison_worksheet
-2020-04-15,NEM,Materials,"Shares of several gold companies are trading lower as equities fall amid mixed earnings results from banks, a significant decline in the price of oil and worse than expected retail sales in March.",2020,negative,-0.3182,-0.7704,-0.7704,,False,negative,negative,,development,model_comparison_worksheet
-2021-02-23,SHW,Materials,The 2 Safest Industrial Dividends Right Now,2021,positive,0.4019,0.4166,0.4166,,False,positive,neutral,,development,model_comparison_worksheet
-2021-03-26,DOW,Materials,"Chemicals giant BASF, spurred on by customers, allocates up to $4.7 bln for CO2 cuts",2021,negative,-0.296,0.0875,0.0875,,False,positive,negative,,development,model_comparison_worksheet
-2021-09-30,NUE,Materials,"Noteworthy ETF Outflows: NOBL, PBCT, WST, NUE",2021,neutral,0.0,0.0,0.0,,False,neutral,neutral,,development,model_comparison_worksheet
-2022-02-08,DD,Materials,"DuPont beats profit estimates on electronics demand, boosts dividend",2022,positive,0.5719,0.598,0.7789,beats|dividend|profit,True,positive,positive,,development,model_comparison_worksheet
-2022-03-04,DOW,Materials,ANALYSIS-Big Oil's plastic boom threatens U.N.'s 'historic' pollution pact,2022,negative,-0.3818,-0.3653,-0.3653,,False,negative,neutral,,development,model_comparison_worksheet
-2022-05-19,NUE,Materials,Wall Street Melts on Panic Selling: Buy 5 Bigwigs On the Dip,2022,negative,-0.5106,-0.0168,-0.0168,,False,neutral,neutral,,development,model_comparison_worksheet
-2022-05-19,NUE,Materials,"After Plunging 29.6% in 4 Weeks, Here's Why the Trend Might Reverse for Nucor (NUE)",2022,neutral,0.0,-0.0077,-0.0077,,False,neutral,neutral,,development,model_comparison_worksheet
-2022-08-04,SHW,Materials,"Want Passive Income? Buy This Dividend Aristocrat, Down 31%",2022,positive,0.2732,-0.341,-0.1293,dividend,True,negative,negative,,development,model_comparison_worksheet
-2023-09-22,SHW,Materials,"Zacks.com featured highlights include Toll Brothers, SPX Technologies, SherwinWilliams and Extreme Networks",2023,neutral,0.0,-0.0039,-0.0039,,False,neutral,neutral,,development,model_comparison_worksheet
-2020-01-30,PSA,RealEstate,"Development Trends In Light Vehicles Market —…—…| BMW, Coda, Mercedes-Benz",2020,neutral,0.0,0.0103,0.0103,,False,neutral,neutral,,development,model_comparison_worksheet
-2020-02-18,AMT,RealEstate,"Cohen & Steers Inc Buys American Tower Corp, Healthcare Trust of America Inc, Digital ...",2020,positive,0.5106,0.0116,0.0116,,False,neutral,neutral,,development,model_comparison_worksheet
-2020-03-30,PSA,RealEstate,Stocks With Rising Relative Strength: Public Storage,2020,positive,0.4939,0.6124,0.6124,,False,positive,neutral,,development,model_comparison_worksheet
-2022-04-11,PLD,RealEstate,Supply Chain Disruptions a Problem? Not for Warehouse Stocks,2022,negative,-0.6249,-0.341,-0.341,,False,negative,neutral,,development,model_comparison_worksheet
-2022-07-28,AMT,RealEstate,7 S&P 500 Stocks to Buy on the Dip,2022,neutral,0.0,0.0,0.0,,False,neutral,neutral,,development,model_comparison_worksheet
-2023-02-09,O,RealEstate,Kimco Realty (KIM) Misses Q4 FFO Estimates,2023,negative,-0.2263,-0.2263,-0.3612,misses,True,negative,negative,,development,model_comparison_worksheet
-2023-02-21,AMT,RealEstate,Validea Guru Fundamental Report for AMT - 2/20/2023,2023,neutral,0.0,0.009,0.009,,False,neutral,neutral,,development,model_comparison_worksheet
-2023-10-05,PSA,RealEstate,"5 Low Beta, High-Yield Stocks for Your Low-Risk Income Portfolio",2023,negative,-0.2732,-0.3485,-0.3485,,False,negative,neutral,,development,model_comparison_worksheet
-2023-10-05,O,RealEstate,"Want $600 in Super Safe Annual-Dividend Income? Invest $5,825 Into the Following 3 Ultra-High-Yield REITs",2023,positive,0.7964,0.0554,0.0554,dividend,False,positive,neutral,,development,model_comparison_worksheet
-2020-01-22,INTC,Tech,"Wednesday Sector Leaders: Healthcare, Technology & Communications",2020,neutral,0.0,0.0,0.0,,False,neutral,neutral,,development,model_comparison_worksheet
-2020-04-23,NVDA,Tech,"Taiwan Semiconductor Seeing Ramp-up in Orders from AMD, Nvidia",2020,neutral,0.0,0.0013,0.0013,,False,neutral,neutral,,development,model_comparison_worksheet
-2020-06-19,INTC,Tech,Ignore Bearish Narratives and Make a Move Into AMD stock,2020,negative,-0.3612,-0.0039,-0.0039,,False,neutral,neutral,,development,model_comparison_worksheet
-2020-09-10,INTC,Tech,Is Advanced Micro Devices Stock Headed for $100?,2020,positive,0.25,0.0129,0.0129,,False,neutral,neutral,,development,model_comparison_worksheet
-2022-05-04,INTC,Tech,EV firm Atlis plans U.S. stock market listing amid IPO drought,2022,neutral,0.0,-0.0155,-0.0155,,False,neutral,neutral,,development,model_comparison_worksheet
-2020-02-07,DUK,Utilities,"SPLV, ES, RSG, DUK: Large Inflows Detected at ETF",2020,neutral,0.0,0.0155,0.0155,,False,neutral,neutral,,development,model_comparison_worksheet
-2020-02-13,DUK,Utilities,"Duke Energy (DUK) Q4 Earnings Beat, Revenues Decline Y/Y",2020,positive,0.2732,0.0077,0.0335,beat,False,neutral,neutral,,development,model_comparison_worksheet
-2020-03-20,NEE,Utilities,The Most Exciting Green Startups To Watch In 2020,2020,positive,0.5413,0.0194,0.0194,,False,neutral,neutral,,development,model_comparison_worksheet
-2020-07-21,NEE,Utilities,"USMV, LVHB: Big ETF Outflows",2020,neutral,0.0,0.0194,0.0194,,False,neutral,neutral,,development,model_comparison_worksheet
-2021-11-19,D,Utilities,The 3 Safest Energy Dividends Right Now,2021,positive,0.5859,0.4224,0.4224,,False,positive,neutral,,development,model_comparison_worksheet
-2022-06-01,DUK,Utilities,"XLU, DUK, SO, D: ETF Inflow Alert",2022,positive,0.7318,0.7102,0.7102,,False,positive,neutral,,development,model_comparison_worksheet
-2022-08-03,DUK,Utilities,"Utility Stocks' Q2 Earnings Due on Aug 4: ED, DUK & More",2022,neutral,0.0,0.0013,0.0013,,False,neutral,neutral,,development,model_comparison_worksheet
-2022-11-14,D,Utilities,Has This High-Yield Utility Become a Dividend Risk?,2022,negative,-0.2732,-0.3601,-0.1518,dividend,True,negative,neutral,,development,model_comparison_worksheet
-2023-04-05,AEP,Utilities,"Wednesday Sector Leaders: Utilities, Healthcare",2023,neutral,0.0,0.0,0.0,,False,neutral,neutral,,development,model_comparison_worksheet
-2023-09-27,NEE,Utilities,Shares of NEE Now Oversold,2023,positive,0.296,0.296,0.296,,False,positive,neutral,,development,model_comparison_worksheet
-2020-04-16,EA,Comm,Shares of several videogame companies are trading higher. The coronavirus pandemic has been a potential positive catalyst for the sector as consumers utilize home-entertainment platforms.,2020,positive,0.7003,0.7343,0.7343,,False,positive,neutral,,holdout,model_comparison_worksheet
-2022-01-26,T,Comm,AT&T quarterly revenue beats estimates on strong wireless and streaming demand,2022,positive,0.4215,0.6187,0.841,beats|beats estimates,True,positive,positive,,holdout,model_comparison_worksheet
-2022-08-16,T,Comm,Streaming Stocks Are Slowing Down. Should You Really Buy Now?,2022,neutral,0.0,-0.3009,-0.3009,,False,negative,negative,,holdout,model_comparison_worksheet
-2022-11-02,CMCSA,Comm,Digital bank Chime cuts 12% of workforce as stormy markets hurt fintechs,2022,negative,-0.6808,-0.3149,-0.3149,,False,negative,negative,,holdout,model_comparison_worksheet
-2023-01-11,T,Comm,Better Buy: Warner Bros. Discovery vs. Paramount Global,2023,positive,0.4404,0.3767,0.3767,,False,positive,neutral,,holdout,model_comparison_worksheet
-2023-02-23,T,Comm,"Zacks Industry Outlook Highlights T-Mobile US, AT&T and Cambium Networks",2023,neutral,0.0,0.0,0.0,,False,neutral,neutral,,holdout,model_comparison_worksheet
-2023-07-17,T,Comm,Markets Today: Disappointing Chinese Q2 GDP Weighs on Stocks,2023,negative,-0.4939,-0.1894,-0.1894,,False,negative,neutral,,holdout,model_comparison_worksheet
-2020-03-05,KO,Consumer,Here's How to Find the Best Dividend Stocks,2020,positive,0.6369,0.3612,0.5267,dividend,True,positive,neutral,,holdout,model_comparison_worksheet
-2020-09-22,KO,Consumer,Warren Buffett's Top 4 Dividend Stocks,2020,positive,0.2023,0.0129,0.2382,dividend,True,positive,neutral,,holdout,model_comparison_worksheet
-2021-03-15,WMT,Consumer,3 Safe Stocks for Bear Market Defense,2021,positive,0.5267,0.1381,0.1381,,False,positive,neutral,,holdout,model_comparison_worksheet
-2021-07-19,KO,Consumer,5 Stocks with 50+ Years of Dividend Growth,2021,positive,0.3818,0.3612,0.5267,dividend,True,positive,neutral,,holdout,model_comparison_worksheet
-2022-02-04,DIS,Consumer,3 Cheap Stocks to Buy Now Before They Take Back Off,2022,neutral,0.0,-0.0052,-0.0052,,False,neutral,neutral,,holdout,model_comparison_worksheet
-2022-03-24,WMT,Consumer,Many Department Stores Have Met Their Demise -- Kohl's Doesn't Want to Be One of Them,2022,negative,-0.0572,-0.0155,-0.0155,,False,neutral,neutral,,holdout,model_comparison_worksheet
-2022-03-25,SBUX,Consumer,Starbucks Rakes in $2.1 Billion in Reward Revenue,2022,positive,0.5719,0.3695,0.3695,,False,positive,neutral,,holdout,model_comparison_worksheet
-2023-04-10,KO,Consumer,3 Dividend Stocks to Buy That Have a Loyal Customer Base,2023,positive,0.4767,0.0194,0.2441,dividend,True,positive,neutral,,holdout,model_comparison_worksheet
-2023-04-14,NKE,Consumer,History Shows Investors Shouldn’t Overreact to Anheuser-Busch 'Brew-haha',2023,negative,-0.25,-0.0155,-0.0155,,False,neutral,neutral,,holdout,model_comparison_worksheet
-2023-11-14,WMT,Consumer,3 Standout Dividend Stocks to Finance Your Golden Years,2023,neutral,0.0,0.0168,0.2418,dividend,True,positive,neutral,,holdout,model_comparison_worksheet
-2023-11-14,WMT,Consumer,Walmart Inc Shares Climb 0.4% Past Previous 52-Week High - Market Mover,2023,positive,0.296,0.5796,0.5796,,False,positive,neutral,,holdout,model_comparison_worksheet
-2020-02-05,XOM,Energy,"Energy Sector Update for 02/05/2020: NS, PAA, BTU, XOM, CVX, COP, SLB, OXY",2020,positive,0.2732,0.0168,0.0168,,False,neutral,neutral,,holdout,model_comparison_worksheet
-2022-02-08,COP,Energy,Will ConocoPhillips (COP) Gain on Rising Earnings Estimates?,2022,positive,0.5267,0.3716,0.3716,,False,positive,neutral,,holdout,model_comparison_worksheet
-2022-05-04,COP,Energy,Marathon Oil (MRO) Q1 Earnings Surpass Estimates,2022,neutral,0.0,0.0181,0.0181,,False,neutral,neutral,,holdout,model_comparison_worksheet
-2022-09-21,OXY,Energy,7 Oil Stocks to Buy on the Dip or You’ll Be Kicking Yourself Later,2022,neutral,0.0,0.0026,0.0026,,False,neutral,neutral,,holdout,model_comparison_worksheet
-2023-04-03,XOM,Energy,GLOBAL MARKETS-Brent crude jumps $5/bbl after output cuts; stocks rise,2023,negative,-0.7096,-0.6289,-0.1111,crude,True,negative,neutral,,holdout,model_comparison_worksheet
-2023-08-07,COP,Energy,Wells Fargo Maintains Conoco Phillips (COP) Overweight Recommendation,2023,negative,-0.128,0.2406,0.4767,overweight,True,positive,neutral,,holdout,model_comparison_worksheet
-2023-12-08,XOM,Energy,3 High-Yielding Dividend Stocks That Are Near Their 52-Week Lows,2023,negative,-0.2023,-0.2023,0.0258,dividend,True,neutral,neutral,,holdout,model_comparison_worksheet
-2020-01-16,WFC,Financials,Is Bank of America Stock Still a Good Long-Term Pick?,2020,positive,0.4404,0.2535,0.2535,,False,positive,neutral,,holdout,model_comparison_worksheet
-2020-02-07,GS,Financials,A Major Executive Leaves Goldman Sachs – Should Investors be Worried?,2020,negative,-0.296,-0.296,-0.296,,False,negative,neutral,,holdout,model_comparison_worksheet
-2020-02-07,USB,Financials,"Los Angeles Capital Management & Equity Research I Buys Rockwell Automation Inc, AbbVie ...",2020,neutral,0.0,0.0052,0.0052,,False,neutral,neutral,,holdout,model_comparison_worksheet
-2021-03-25,MS,Financials,U.S. tech companies use their expensive stock to pay for acquisitions,2021,negative,-0.1027,-0.009,-0.009,,False,neutral,neutral,,holdout,model_comparison_worksheet
-2021-10-25,V,Financials,"Got $300,000? These Dividend Stocks Can Make You a Millionaire by 2031 (or Sooner)",2021,neutral,0.0,0.0,0.2263,dividend,True,positive,neutral,,holdout,model_comparison_worksheet
-2022-03-03,GS,Financials,Goldman Sachs GQG fund cuts Russian exposure to $222 mln,2022,negative,-0.296,-0.2846,-0.2846,,False,negative,negative,,holdout,model_comparison_worksheet
-2021-09-16,ABBV,Healthcare,2 Embarrassingly Cheap Dividend Stocks to Buy,2021,negative,-0.4019,-0.3989,-0.1986,dividend,True,negative,neutral,,holdout,model_comparison_worksheet
-2022-03-18,BA,Industrials,Boeing (BA) Wins Deal to Supply P-8A Training Systems Hardware,2022,positive,0.5719,0.5824,0.5824,,False,positive,neutral,,holdout,model_comparison_worksheet
-2020-02-25,NEM,Materials,Acquisitions and a Pop in Gold Mean NEM Stock Will Continue to Sparkle,2020,positive,0.4215,0.4215,0.4215,,False,positive,neutral,,holdout,model_comparison_worksheet
-2020-06-01,NEM,Materials,Newmont About To Put More Money In Your Pocket (NEM),2020,neutral,0.0,0.0181,0.0181,,False,neutral,neutral,,holdout,model_comparison_worksheet
-2020-04-30,PSA,RealEstate,Public Storage Q1 adjusted earnings Beat Estimates,2020,neutral,0.0,0.3612,0.5918,beat|beat estimates,True,positive,positive,,holdout,model_comparison_worksheet
-2022-03-22,PLD,RealEstate,Mecalux targets June for $3.3 bln Madrid IPO - sources,2022,neutral,0.0,0.0,0.0,,False,neutral,neutral,,holdout,model_comparison_worksheet
-2022-06-09,O,RealEstate,2 Stocks That Cut You a Check Each Month,2022,negative,-0.2732,0.0013,0.0013,,False,neutral,negative,,holdout,model_comparison_worksheet
-2022-06-17,CCI,RealEstate,Crown Castle (CCI) Outpaces Stock Market Gains: What You Should Know,2022,positive,0.34,0.3559,0.3559,,False,positive,neutral,,holdout,model_comparison_worksheet
-2021-09-08,NVDA,Tech,3 Surging Tech Stocks: Can They Go Higher?,2021,neutral,0.0,0.3716,0.3716,,False,positive,neutral,,holdout,model_comparison_worksheet
-2022-04-28,INTC,Tech,Intel (INTC) Q1 Earnings and Revenues Beat Estimates,2022,neutral,0.0,0.3612,0.5918,beat|beat estimates,True,positive,positive,,holdout,model_comparison_worksheet
-2023-05-04,NVDA,Tech,"White House to meet Microsoft, Google CEOs on AI dangers",2023,negative,-0.4939,-0.4939,-0.4939,,False,negative,neutral,,holdout,model_comparison_worksheet
-2020-03-09,D,Utilities,Shares of several utilities companies are trading lower as US equities crash amid coronavirus fears and OPEC failing to reach a production agreement.,2020,negative,-0.6705,-0.6778,-0.6778,,False,negative,negative,,holdout,model_comparison_worksheet
-2023-06-13,NEE,Utilities,NextEra Energy (NEE) Gains But Lags Market: What You Should Know,2023,negative,-0.25,-0.3685,-0.3685,,False,negative,neutral,,holdout,model_comparison_worksheet
-2023-06-23,NEE,Utilities,"US Mountain Valley natgas pipe moving forward, capacity may be limited",2023,negative,-0.2263,-0.2252,-0.2252,,False,negative,neutral,,holdout,model_comparison_worksheet
+2020-02-11,TMUS,Comm,Daily Markets: Are Coronavirus Worries Behind Us? What This Means For Investors,2020,negative,-0.4215,-0.4215,-0.4215,,False,negative,neutral,neutral,development,model_comparison_worksheet
+2020-03-03,TMUS,Comm,Invesco S&P 500 Equal Weight ETF Experiences Big Outflow,2020,neutral,0.0,0.0323,0.0323,,False,neutral,neutral,negative,development,model_comparison_worksheet
+2020-11-12,T,Comm,4 Dividend Stocks With Yields Over 5%,2020,neutral,0.0,0.0,0.2263,dividend,True,positive,neutral,positive,development,model_comparison_worksheet
+2021-01-25,T,Comm,3 High-Yield Dividend Stocks I'd Buy Right Now,2021,neutral,0.0,0.0284,0.2523,dividend,True,positive,neutral,positive,development,model_comparison_worksheet
+2021-01-29,TMUS,Comm,3 Dividend Stocks That Could Pay You for the Rest of Your Life,2021,negative,-0.1027,0.0181,0.2429,dividend,True,positive,neutral,positive,development,model_comparison_worksheet
+2022-01-06,T,Comm,U.S. flights still face risks from new 5G service -FAA,2022,negative,-0.2732,-0.3517,-0.3517,,False,negative,neutral,negative,development,model_comparison_worksheet
+2022-04-29,TMUS,Comm,"Top Research Reports for T-Mobile, Deere & PayPal",2022,positive,0.2023,0.0129,0.0129,,False,neutral,neutral,neutral,development,model_comparison_worksheet
+2023-02-06,EA,Comm,What's Next For Electronic Arts Stock After 10% Cut In A Week Following Dismal Q3?,2023,negative,-0.7269,-0.0168,-0.0168,,False,neutral,negative,negative,development,model_comparison_worksheet
+2023-06-02,CMCSA,Comm,Comcast (CMCSA) Shares Cross 3% Yield Mark,2023,positive,0.296,0.296,0.296,,False,positive,neutral,positive,development,model_comparison_worksheet
+2020-01-30,KO,Consumer,7 Consumer Defensive Stocks Moving In Thursday's Pre-Market Session,2020,neutral,0.0258,-0.0052,-0.0052,,False,neutral,neutral,neutral,development,model_comparison_worksheet
+2021-01-13,DIS,Consumer,"Netflix Still Dominates Streaming, but Disney Steals Market Share",2021,negative,-0.3716,-0.6525,-0.6525,,False,negative,neutral,positive,development,model_comparison_worksheet
+2021-09-27,NKE,Consumer,3 International Tech Stocks to Buy Right Now,2021,neutral,0.0,0.0284,0.0284,,False,neutral,neutral,positive,development,model_comparison_worksheet
+2021-12-06,DIS,Consumer,Disney's Streaming Budget Already Rivals That of Netflix,2021,neutral,0.0,0.0,0.0,,False,neutral,neutral,neutral,development,model_comparison_worksheet
+2022-01-05,KO,Consumer,3 Dividend Giants to Pad Your Income in 2022,2022,neutral,0.0,0.0155,0.2406,dividend,True,positive,neutral,positive,development,model_comparison_worksheet
+2022-10-31,DIS,Consumer,"Shanghai Disney shuts over COVID, visitors unable to leave",2022,negative,-0.0516,-0.0155,-0.0155,,False,neutral,neutral,negative,development,model_comparison_worksheet
+2021-11-02,CVX,Energy,"Icahn's CVR moves forward with renewable fuel plans, eyes state incentives",2021,positive,0.3182,0.3313,0.3313,,False,positive,neutral,positive,development,model_comparison_worksheet
+2022-02-15,COP,Energy,These Are The Ten Biggest Crude Oil Production Companies,2022,negative,-0.5719,-0.564,0.0142,crude,True,neutral,neutral,neutral,development,model_comparison_worksheet
+2022-08-19,CVX,Energy,"Zacks Value Investor Highlights: Chevron, Occidental Petroleum, Apple, Activision Blizzard and Amazon",2022,positive,0.4767,0.195,0.195,,False,positive,neutral,positive,development,model_comparison_worksheet
+2023-02-16,OXY,Energy,Interesting OXY Put And Call Options For April 21st,2023,positive,0.4019,0.0142,0.0142,,False,neutral,neutral,neutral,development,model_comparison_worksheet
+2023-04-28,CVX,Energy,Chevron (CVX) Q1 2023 Earnings Call Transcript,2023,neutral,0.0,0.0,0.0,,False,neutral,neutral,neutral,development,model_comparison_worksheet
+2023-06-20,OXY,Energy,Investors Heavily Search Occidental Petroleum Corporation (OXY): Here is What You Need to Know,2023,neutral,0.0,0.0,0.0,,False,neutral,neutral,neutral,development,model_comparison_worksheet
+2021-06-11,V,Financials,"At $232, Is Visa Stock Still Attractive?",2021,positive,0.4404,0.0168,0.0168,,False,neutral,neutral,neutral,development,model_comparison_worksheet
+2021-06-17,GS,Financials,Market Down? Here's 1 Stock to Own for the Long Term,2021,neutral,0.0,-0.3612,-0.3612,,False,negative,negative,positive,development,model_comparison_worksheet
+2023-06-01,GS,Financials,Why Kingsoft Cloud Holdings Stock Leaped 20% Higher Today,2023,neutral,0.0,0.3643,0.3643,,False,positive,neutral,positive,development,model_comparison_worksheet
+2020-02-24,GILD,Healthcare,Gilead Sciences Option Alert: Mar 20 $70 Calls Sweep (2) near the Ask: 500 @ $4.5 vs 18026 OI; Ref=$72.8664,2020,positive,0.296,0.0065,0.0065,,False,neutral,neutral,neutral,development,model_comparison_worksheet
+2020-04-16,ABT,Healthcare,Abbott Laboratories Q1 adjusted earnings Beat Estimates,2020,neutral,0.0,0.3612,0.5918,beat|beat estimates,True,positive,positive,positive,development,model_comparison_worksheet
+2022-05-25,ABT,Healthcare,U.S. FDA defends baby formula shortage response in Congress,2022,negative,-0.25,-0.0129,-0.0129,,False,neutral,neutral,negative,development,model_comparison_worksheet
+2023-04-10,ABBV,Healthcare,Is Invesco Dynamic Pharmaceuticals ETF (PJP) a Strong ETF Right Now?,2023,positive,0.7096,0.634,0.634,,False,positive,neutral,neutral,development,model_comparison_worksheet
+2023-09-25,MRK,Healthcare,2 Undervalued Dividend Stocks with 5% Yields To Buy Near 52-Week Lows,2023,negative,-0.2023,-0.2083,0.0194,dividend,True,neutral,neutral,positive,development,model_comparison_worksheet
+2020-04-08,BA,Industrials,Wall St climbs on hopes of U.S. outbreak nearing peak,2020,positive,0.4215,0.4243,0.4243,,False,positive,neutral,positive,development,model_comparison_worksheet
+2020-04-29,MMM,Industrials,"B of A Securities Maintains Neutral on 3M, Raises Price Target to $170",2020,positive,0.296,0.296,0.296,,False,positive,positive,positive,development,model_comparison_worksheet
+2021-01-28,GE,Industrials,Is 3D Printing Finally Ready For Takeoff? Companies to Watch,2021,positive,0.3612,0.0168,0.0168,,False,neutral,neutral,positive,development,model_comparison_worksheet
+2021-05-11,BA,Industrials,"EXCLUSIVE-Airbus tells suppliers to plan for 18% output hike in 2022, sources say",2021,neutral,0.0,0.0103,0.0103,,False,neutral,neutral,positive,development,model_comparison_worksheet
+2022-02-01,UPS,Industrials,US STOCKS-Wall St overcomes choppy trading to close higher,2022,neutral,0.0,0.3453,0.3453,,False,positive,neutral,positive,development,model_comparison_worksheet
+2022-02-23,UPS,Industrials,UPS loses $2 billion euro claim for EU veto on TNT bid,2022,negative,-0.3182,-0.4648,-0.4648,,False,negative,neutral,negative,development,model_comparison_worksheet
+2022-05-25,MMM,Industrials,4 Safe Dividend Stocks Still Offering Mighty Solid Yield,2022,positive,0.5423,0.3889,0.5477,dividend,True,positive,neutral,positive,development,model_comparison_worksheet
+2023-01-13,CAT,Industrials,Small Caps to Provide Big Performance in 2023,2023,neutral,0.0,0.0271,0.0271,,False,neutral,neutral,positive,development,model_comparison_worksheet
+2023-04-04,UPS,Industrials,2 Railroad Stocks Impressing With Their Solid Dividend Yield,2023,positive,0.6249,0.7184,0.7845,dividend,True,positive,neutral,positive,development,model_comparison_worksheet
+2023-04-18,CAT,Industrials,Caterpillar (CAT) Stock Sinks As Market Gains: What You Should Know,2023,positive,0.34,0.34,0.34,,False,positive,neutral,negative,development,model_comparison_worksheet
+2020-01-30,SHW,Materials,Sherwin-Williams Co Q4 adjusted earnings Miss Estimates,2020,negative,-0.1531,-0.0065,-0.3612,miss,True,negative,negative,negative,development,model_comparison_worksheet
+2020-02-25,NEM,Materials,"B. Riley FBR Maintains Buy on Newmont, Raises Price Target to $54",2020,neutral,0.0,0.009,0.009,,False,neutral,positive,positive,development,model_comparison_worksheet
+2020-04-15,NEM,Materials,"Shares of several gold companies are trading lower as equities fall amid mixed earnings results from banks, a significant decline in the price of oil and worse than expected retail sales in March.",2020,negative,-0.3182,-0.7704,-0.7704,,False,negative,negative,negative,development,model_comparison_worksheet
+2021-02-23,SHW,Materials,The 2 Safest Industrial Dividends Right Now,2021,positive,0.4019,0.4166,0.4166,,False,positive,neutral,positive,development,model_comparison_worksheet
+2021-03-26,DOW,Materials,"Chemicals giant BASF, spurred on by customers, allocates up to $4.7 bln for CO2 cuts",2021,negative,-0.296,0.0875,0.0875,,False,positive,negative,positive,development,model_comparison_worksheet
+2021-09-30,NUE,Materials,"Noteworthy ETF Outflows: NOBL, PBCT, WST, NUE",2021,neutral,0.0,0.0,0.0,,False,neutral,neutral,negative,development,model_comparison_worksheet
+2022-02-08,DD,Materials,"DuPont beats profit estimates on electronics demand, boosts dividend",2022,positive,0.5719,0.598,0.7789,beats|dividend|profit,True,positive,positive,positive,development,model_comparison_worksheet
+2022-03-04,DOW,Materials,ANALYSIS-Big Oil's plastic boom threatens U.N.'s 'historic' pollution pact,2022,negative,-0.3818,-0.3653,-0.3653,,False,negative,neutral,negative,development,model_comparison_worksheet
+2022-05-19,NUE,Materials,Wall Street Melts on Panic Selling: Buy 5 Bigwigs On the Dip,2022,negative,-0.5106,-0.0168,-0.0168,,False,neutral,neutral,positive,development,model_comparison_worksheet
+2022-05-19,NUE,Materials,"After Plunging 29.6% in 4 Weeks, Here's Why the Trend Might Reverse for Nucor (NUE)",2022,neutral,0.0,-0.0077,-0.0077,,False,neutral,neutral,positive,development,model_comparison_worksheet
+2022-08-04,SHW,Materials,"Want Passive Income? Buy This Dividend Aristocrat, Down 31%",2022,positive,0.2732,-0.341,-0.1293,dividend,True,negative,negative,positive,development,model_comparison_worksheet
+2023-09-22,SHW,Materials,"Zacks.com featured highlights include Toll Brothers, SPX Technologies, SherwinWilliams and Extreme Networks",2023,neutral,0.0,-0.0039,-0.0039,,False,neutral,neutral,positive,development,model_comparison_worksheet
+2020-01-30,PSA,RealEstate,"Development Trends In Light Vehicles Market —…—…| BMW, Coda, Mercedes-Benz",2020,neutral,0.0,0.0103,0.0103,,False,neutral,neutral,neutral,development,model_comparison_worksheet
+2020-02-18,AMT,RealEstate,"Cohen & Steers Inc Buys American Tower Corp, Healthcare Trust of America Inc, Digital ...",2020,positive,0.5106,0.0116,0.0116,,False,neutral,neutral,positive,development,model_comparison_worksheet
+2020-03-30,PSA,RealEstate,Stocks With Rising Relative Strength: Public Storage,2020,positive,0.4939,0.6124,0.6124,,False,positive,neutral,positive,development,model_comparison_worksheet
+2022-04-11,PLD,RealEstate,Supply Chain Disruptions a Problem? Not for Warehouse Stocks,2022,negative,-0.6249,-0.341,-0.341,,False,negative,neutral,positive,development,model_comparison_worksheet
+2022-07-28,AMT,RealEstate,7 S&P 500 Stocks to Buy on the Dip,2022,neutral,0.0,0.0,0.0,,False,neutral,neutral,positive,development,model_comparison_worksheet
+2023-02-09,O,RealEstate,Kimco Realty (KIM) Misses Q4 FFO Estimates,2023,negative,-0.2263,-0.2263,-0.3612,misses,True,negative,negative,negative,development,model_comparison_worksheet
+2023-02-21,AMT,RealEstate,Validea Guru Fundamental Report for AMT - 2/20/2023,2023,neutral,0.0,0.009,0.009,,False,neutral,neutral,neutral,development,model_comparison_worksheet
+2023-10-05,PSA,RealEstate,"5 Low Beta, High-Yield Stocks for Your Low-Risk Income Portfolio",2023,negative,-0.2732,-0.3485,-0.3485,,False,negative,neutral,positive,development,model_comparison_worksheet
+2023-10-05,O,RealEstate,"Want $600 in Super Safe Annual-Dividend Income? Invest $5,825 Into the Following 3 Ultra-High-Yield REITs",2023,positive,0.7964,0.0554,0.0554,dividend,False,positive,neutral,positive,development,model_comparison_worksheet
+2020-01-22,INTC,Tech,"Wednesday Sector Leaders: Healthcare, Technology & Communications",2020,neutral,0.0,0.0,0.0,,False,neutral,neutral,positive,development,model_comparison_worksheet
+2020-04-23,NVDA,Tech,"Taiwan Semiconductor Seeing Ramp-up in Orders from AMD, Nvidia",2020,neutral,0.0,0.0013,0.0013,,False,neutral,neutral,positive,development,model_comparison_worksheet
+2020-06-19,INTC,Tech,Ignore Bearish Narratives and Make a Move Into AMD stock,2020,negative,-0.3612,-0.0039,-0.0039,,False,neutral,neutral,positive,development,model_comparison_worksheet
+2020-09-10,INTC,Tech,Is Advanced Micro Devices Stock Headed for $100?,2020,positive,0.25,0.0129,0.0129,,False,neutral,neutral,positive,development,model_comparison_worksheet
+2022-05-04,INTC,Tech,EV firm Atlis plans U.S. stock market listing amid IPO drought,2022,neutral,0.0,-0.0155,-0.0155,,False,neutral,neutral,neutral,development,model_comparison_worksheet
+2020-02-07,DUK,Utilities,"SPLV, ES, RSG, DUK: Large Inflows Detected at ETF",2020,neutral,0.0,0.0155,0.0155,,False,neutral,neutral,positive,development,model_comparison_worksheet
+2020-02-13,DUK,Utilities,"Duke Energy (DUK) Q4 Earnings Beat, Revenues Decline Y/Y",2020,positive,0.2732,0.0077,0.0335,beat,False,neutral,neutral,neutral,development,model_comparison_worksheet
+2020-03-20,NEE,Utilities,The Most Exciting Green Startups To Watch In 2020,2020,positive,0.5413,0.0194,0.0194,,False,neutral,neutral,positive,development,model_comparison_worksheet
+2020-07-21,NEE,Utilities,"USMV, LVHB: Big ETF Outflows",2020,neutral,0.0,0.0194,0.0194,,False,neutral,neutral,negative,development,model_comparison_worksheet
+2021-11-19,D,Utilities,The 3 Safest Energy Dividends Right Now,2021,positive,0.5859,0.4224,0.4224,,False,positive,neutral,positive,development,model_comparison_worksheet
+2022-06-01,DUK,Utilities,"XLU, DUK, SO, D: ETF Inflow Alert",2022,positive,0.7318,0.7102,0.7102,,False,positive,neutral,positive,development,model_comparison_worksheet
+2022-08-03,DUK,Utilities,"Utility Stocks' Q2 Earnings Due on Aug 4: ED, DUK & More",2022,neutral,0.0,0.0013,0.0013,,False,neutral,neutral,neutral,development,model_comparison_worksheet
+2022-11-14,D,Utilities,Has This High-Yield Utility Become a Dividend Risk?,2022,negative,-0.2732,-0.3601,-0.1518,dividend,True,negative,neutral,negative,development,model_comparison_worksheet
+2023-04-05,AEP,Utilities,"Wednesday Sector Leaders: Utilities, Healthcare",2023,neutral,0.0,0.0,0.0,,False,neutral,neutral,positive,development,model_comparison_worksheet
+2023-09-27,NEE,Utilities,Shares of NEE Now Oversold,2023,positive,0.296,0.296,0.296,,False,positive,neutral,negative,development,model_comparison_worksheet
+2020-04-16,EA,Comm,Shares of several videogame companies are trading higher. The coronavirus pandemic has been a potential positive catalyst for the sector as consumers utilize home-entertainment platforms.,2020,positive,0.7003,0.7343,0.7343,,False,positive,neutral,positive,holdout,model_comparison_worksheet
+2022-01-26,T,Comm,AT&T quarterly revenue beats estimates on strong wireless and streaming demand,2022,positive,0.4215,0.6187,0.841,beats|beats estimates,True,positive,positive,positive,holdout,model_comparison_worksheet
+2022-08-16,T,Comm,Streaming Stocks Are Slowing Down. Should You Really Buy Now?,2022,neutral,0.0,-0.3009,-0.3009,,False,negative,negative,negative,holdout,model_comparison_worksheet
+2022-11-02,CMCSA,Comm,Digital bank Chime cuts 12% of workforce as stormy markets hurt fintechs,2022,negative,-0.6808,-0.3149,-0.3149,,False,negative,negative,negative,holdout,model_comparison_worksheet
+2023-01-11,T,Comm,Better Buy: Warner Bros. Discovery vs. Paramount Global,2023,positive,0.4404,0.3767,0.3767,,False,positive,neutral,neutral,holdout,model_comparison_worksheet
+2023-02-23,T,Comm,"Zacks Industry Outlook Highlights T-Mobile US, AT&T and Cambium Networks",2023,neutral,0.0,0.0,0.0,,False,neutral,neutral,positive,holdout,model_comparison_worksheet
+2023-07-17,T,Comm,Markets Today: Disappointing Chinese Q2 GDP Weighs on Stocks,2023,negative,-0.4939,-0.1894,-0.1894,,False,negative,neutral,negative,holdout,model_comparison_worksheet
+2020-03-05,KO,Consumer,Here's How to Find the Best Dividend Stocks,2020,positive,0.6369,0.3612,0.5267,dividend,True,positive,neutral,positive,holdout,model_comparison_worksheet
+2020-09-22,KO,Consumer,Warren Buffett's Top 4 Dividend Stocks,2020,positive,0.2023,0.0129,0.2382,dividend,True,positive,neutral,positive,holdout,model_comparison_worksheet
+2021-03-15,WMT,Consumer,3 Safe Stocks for Bear Market Defense,2021,positive,0.5267,0.1381,0.1381,,False,positive,neutral,positive,holdout,model_comparison_worksheet
+2021-07-19,KO,Consumer,5 Stocks with 50+ Years of Dividend Growth,2021,positive,0.3818,0.3612,0.5267,dividend,True,positive,neutral,positive,holdout,model_comparison_worksheet
+2022-02-04,DIS,Consumer,3 Cheap Stocks to Buy Now Before They Take Back Off,2022,neutral,0.0,-0.0052,-0.0052,,False,neutral,neutral,positive,holdout,model_comparison_worksheet
+2022-03-24,WMT,Consumer,Many Department Stores Have Met Their Demise -- Kohl's Doesn't Want to Be One of Them,2022,negative,-0.0572,-0.0155,-0.0155,,False,neutral,neutral,negative,holdout,model_comparison_worksheet
+2022-03-25,SBUX,Consumer,Starbucks Rakes in $2.1 Billion in Reward Revenue,2022,positive,0.5719,0.3695,0.3695,,False,positive,neutral,positive,holdout,model_comparison_worksheet
+2023-04-10,KO,Consumer,3 Dividend Stocks to Buy That Have a Loyal Customer Base,2023,positive,0.4767,0.0194,0.2441,dividend,True,positive,neutral,positive,holdout,model_comparison_worksheet
+2023-04-14,NKE,Consumer,History Shows Investors Shouldn’t Overreact to Anheuser-Busch 'Brew-haha',2023,negative,-0.25,-0.0155,-0.0155,,False,neutral,neutral,neutral,holdout,model_comparison_worksheet
+2023-11-14,WMT,Consumer,3 Standout Dividend Stocks to Finance Your Golden Years,2023,neutral,0.0,0.0168,0.2418,dividend,True,positive,neutral,positive,holdout,model_comparison_worksheet
+2023-11-14,WMT,Consumer,Walmart Inc Shares Climb 0.4% Past Previous 52-Week High - Market Mover,2023,positive,0.296,0.5796,0.5796,,False,positive,neutral,positive,holdout,model_comparison_worksheet
+2020-02-05,XOM,Energy,"Energy Sector Update for 02/05/2020: NS, PAA, BTU, XOM, CVX, COP, SLB, OXY",2020,positive,0.2732,0.0168,0.0168,,False,neutral,neutral,neutral,holdout,model_comparison_worksheet
+2022-02-08,COP,Energy,Will ConocoPhillips (COP) Gain on Rising Earnings Estimates?,2022,positive,0.5267,0.3716,0.3716,,False,positive,neutral,positive,holdout,model_comparison_worksheet
+2022-05-04,COP,Energy,Marathon Oil (MRO) Q1 Earnings Surpass Estimates,2022,neutral,0.0,0.0181,0.0181,,False,neutral,neutral,positive,holdout,model_comparison_worksheet
+2022-09-21,OXY,Energy,7 Oil Stocks to Buy on the Dip or You’ll Be Kicking Yourself Later,2022,neutral,0.0,0.0026,0.0026,,False,neutral,neutral,positive,holdout,model_comparison_worksheet
+2023-04-03,XOM,Energy,GLOBAL MARKETS-Brent crude jumps $5/bbl after output cuts; stocks rise,2023,negative,-0.7096,-0.6289,-0.1111,crude,True,negative,neutral,positive,holdout,model_comparison_worksheet
+2023-08-07,COP,Energy,Wells Fargo Maintains Conoco Phillips (COP) Overweight Recommendation,2023,negative,-0.128,0.2406,0.4767,overweight,True,positive,neutral,positive,holdout,model_comparison_worksheet
+2023-12-08,XOM,Energy,3 High-Yielding Dividend Stocks That Are Near Their 52-Week Lows,2023,negative,-0.2023,-0.2023,0.0258,dividend,True,neutral,neutral,positive,holdout,model_comparison_worksheet
+2020-01-16,WFC,Financials,Is Bank of America Stock Still a Good Long-Term Pick?,2020,positive,0.4404,0.2535,0.2535,,False,positive,neutral,positive,holdout,model_comparison_worksheet
+2020-02-07,GS,Financials,A Major Executive Leaves Goldman Sachs – Should Investors be Worried?,2020,negative,-0.296,-0.296,-0.296,,False,negative,neutral,negative,holdout,model_comparison_worksheet
+2020-02-07,USB,Financials,"Los Angeles Capital Management & Equity Research I Buys Rockwell Automation Inc, AbbVie ...",2020,neutral,0.0,0.0052,0.0052,,False,neutral,neutral,positive,holdout,model_comparison_worksheet
+2021-03-25,MS,Financials,U.S. tech companies use their expensive stock to pay for acquisitions,2021,negative,-0.1027,-0.009,-0.009,,False,neutral,neutral,neutral,holdout,model_comparison_worksheet
+2021-10-25,V,Financials,"Got $300,000? These Dividend Stocks Can Make You a Millionaire by 2031 (or Sooner)",2021,neutral,0.0,0.0,0.2263,dividend,True,positive,neutral,positive,holdout,model_comparison_worksheet
+2022-03-03,GS,Financials,Goldman Sachs GQG fund cuts Russian exposure to $222 mln,2022,negative,-0.296,-0.2846,-0.2846,,False,negative,negative,negative,holdout,model_comparison_worksheet
+2021-09-16,ABBV,Healthcare,2 Embarrassingly Cheap Dividend Stocks to Buy,2021,negative,-0.4019,-0.3989,-0.1986,dividend,True,negative,neutral,positive,holdout,model_comparison_worksheet
+2022-03-18,BA,Industrials,Boeing (BA) Wins Deal to Supply P-8A Training Systems Hardware,2022,positive,0.5719,0.5824,0.5824,,False,positive,neutral,positive,holdout,model_comparison_worksheet
+2020-02-25,NEM,Materials,Acquisitions and a Pop in Gold Mean NEM Stock Will Continue to Sparkle,2020,positive,0.4215,0.4215,0.4215,,False,positive,neutral,positive,holdout,model_comparison_worksheet
+2020-06-01,NEM,Materials,Newmont About To Put More Money In Your Pocket (NEM),2020,neutral,0.0,0.0181,0.0181,,False,neutral,neutral,positive,holdout,model_comparison_worksheet
+2020-04-30,PSA,RealEstate,Public Storage Q1 adjusted earnings Beat Estimates,2020,neutral,0.0,0.3612,0.5918,beat|beat estimates,True,positive,positive,positive,holdout,model_comparison_worksheet
+2022-03-22,PLD,RealEstate,Mecalux targets June for $3.3 bln Madrid IPO - sources,2022,neutral,0.0,0.0,0.0,,False,neutral,neutral,neutral,holdout,model_comparison_worksheet
+2022-06-09,O,RealEstate,2 Stocks That Cut You a Check Each Month,2022,negative,-0.2732,0.0013,0.0013,,False,neutral,negative,positive,holdout,model_comparison_worksheet
+2022-06-17,CCI,RealEstate,Crown Castle (CCI) Outpaces Stock Market Gains: What You Should Know,2022,positive,0.34,0.3559,0.3559,,False,positive,neutral,positive,holdout,model_comparison_worksheet
+2021-09-08,NVDA,Tech,3 Surging Tech Stocks: Can They Go Higher?,2021,neutral,0.0,0.3716,0.3716,,False,positive,neutral,positive,holdout,model_comparison_worksheet
+2022-04-28,INTC,Tech,Intel (INTC) Q1 Earnings and Revenues Beat Estimates,2022,neutral,0.0,0.3612,0.5918,beat|beat estimates,True,positive,positive,positive,holdout,model_comparison_worksheet
+2023-05-04,NVDA,Tech,"White House to meet Microsoft, Google CEOs on AI dangers",2023,negative,-0.4939,-0.4939,-0.4939,,False,negative,neutral,negative,holdout,model_comparison_worksheet
+2020-03-09,D,Utilities,Shares of several utilities companies are trading lower as US equities crash amid coronavirus fears and OPEC failing to reach a production agreement.,2020,negative,-0.6705,-0.6778,-0.6778,,False,negative,negative,negative,holdout,model_comparison_worksheet
+2023-06-13,NEE,Utilities,NextEra Energy (NEE) Gains But Lags Market: What You Should Know,2023,negative,-0.25,-0.3685,-0.3685,,False,negative,neutral,neutral,holdout,model_comparison_worksheet
+2023-06-23,NEE,Utilities,"US Mountain Valley natgas pipe moving forward, capacity may be limited",2023,negative,-0.2263,-0.2252,-0.2252,,False,negative,neutral,neutral,holdout,model_comparison_worksheet

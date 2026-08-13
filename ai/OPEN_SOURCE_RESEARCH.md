@@ -98,7 +98,7 @@ Shortlist for detailed inspection marked ★.
 | Compatibility | Usable as optional benchmark if `finvader` installs under the local Python; else reconstruct labelled open-source-style benchmark carefully |
 | Decision | **Benchmark only** |
 | Signal Harbour implementation | `src/sentiment.py` (`score_with_open_source_finvader` path); comparison tables |
-| Attribution | Cite Petr Koráb FinVADER + Apache-2.0 in report/THIRD_PARTY_NOTICES if package code executed |
+| Attribution | Cite Petr Koráb FinVADER + Apache-2.0 in `THIRD_PARTY_NOTICES.md` (repo root) if package code executed |
 | Verification | Compare compound distributions vs base VADER on same headlines |
 
 ### 2. cjhutto/vaderSentiment ★

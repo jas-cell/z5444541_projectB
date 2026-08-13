@@ -43,7 +43,7 @@ This file records the instructions I actually give the coding assistant for FINS
 - `python -m pytest -q`
 - `python scripts/check_handin.py`
 - Manual checks: weight sums, method divergence, headline weekend→Monday mapping, explain-tab date alignment, Allocate calendar behaviour
-- Do not invent prompts, mistakes, or human labels. If a review sheet is blank, say so; if I label headlines, record that separately.
+- Do not invent prompts, mistakes, or human labels. Preserve filled `kaiyuan_review_label` values; do not overwrite them with keyword rules.
 
 ## Report / app voice
 
