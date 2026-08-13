@@ -267,18 +267,26 @@ with tab_explain:
         "They are not same-day headlines paired with yesterday's score."
     )
     latest_trade_date = pd.to_datetime(explain_snapshot["trade_date"]).max()
-    st.write({
-        "portfolio_trade_date": latest_trade_date.date().isoformat(),
-        "interpretation": "tradable_score on this date uses context-weighted sentiment from signal_date only",
-    })
-    c1, c2, c3 = st.columns(3)
-    c1.metric("Tickers in snapshot", str(explain_snapshot["ticker"].nunique()))
     conf_col = "explain_coverage_confidence" if "explain_coverage_confidence" in explain_snapshot.columns else "coverage_confidence"
     att_col = "explain_attention_confidence" if "explain_attention_confidence" in explain_snapshot.columns else "attention_confidence"
-    c2.metric("Mean coverage confidence (signal day)", f"{pd.to_numeric(explain_snapshot[conf_col], errors='coerce').mean():.2f}")
-    c3.metric("Mean attention confidence (signal day)", f"{pd.to_numeric(explain_snapshot[att_col], errors='coerce').mean():.2f}")
+    count_col = "explain_headline_count" if "explain_headline_count" in explain_snapshot.columns else "headline_count"
 
-    ticker = st.selectbox("Inspect ticker", sorted(explain_snapshot["ticker"].dropna().unique()))
+    c1, c2, c3, c4 = st.columns(4)
+    c1.metric("Portfolio trade date", latest_trade_date.date().isoformat())
+    c2.metric("Tickers in snapshot", str(explain_snapshot["ticker"].nunique()))
+    c3.metric("Mean coverage confidence (signal day)", f"{pd.to_numeric(explain_snapshot[conf_col], errors='coerce').mean():.2f}")
+    c4.metric("Mean attention confidence (signal day)", f"{pd.to_numeric(explain_snapshot[att_col], errors='coerce').mean():.2f}")
+
+    options = sorted(explain_snapshot["ticker"].dropna().unique())
+    busiest_rows = explain_snapshot.sort_values(
+        [count_col, "tradable_score"], ascending=[False, False]
+    )
+    busiest = busiest_rows["ticker"].iloc[0] if not busiest_rows.empty else options[0]
+    ticker = st.selectbox(
+        "Inspect ticker — defaults to the most-covered name on the signal day",
+        options,
+        index=options.index(busiest) if busiest in options else 0,
+    )
     row = explain_snapshot.loc[explain_snapshot["ticker"].eq(ticker)].iloc[0]
 
     def _get(name: str, default=np.nan):
@@ -288,22 +296,36 @@ with tab_explain:
         return row.get(name, default)
 
     sector_val = _get("sector")
-    st.write({
-        "ticker": ticker,
-        "sector": None if pd.isna(sector_val) else sector_val,
-        "signal_date": (
-            None if pd.isna(row.get("signal_date")) else pd.to_datetime(row.get("signal_date")).date().isoformat()
-        ),
-        "portfolio_trade_date": pd.to_datetime(row.get("trade_date")).date().isoformat(),
-        "raw_sentiment_on_signal_date": float(_get("sentiment", 0.0) or 0.0),
-        "coverage_confidence_on_signal_date": float(_get("coverage_confidence", 0.0) or 0.0),
-        "attention_pulse_on_signal_date": None if pd.isna(_get("attention_pulse")) else float(_get("attention_pulse")),
-        "attention_confidence_on_signal_date": float(_get("attention_confidence", 0.0) or 0.0),
-        "context_weighted_sentiment_on_signal_date": float(_get("context_weighted_sentiment", 0.0) or 0.0),
-        "tradable_score_used_on_portfolio_date": float(row.get("tradable_score", 0.0)),
-        "headline_count_on_signal_date": int(_get("headline_count", 0) or 0),
-        "contributing_finance_terms_or_rules_on_signal_date": _get("contributing_terms", ""),
-    })
+    sector_txt = sector_val if isinstance(sector_val, str) and sector_val else "sector unavailable"
+    signal_date = row.get("signal_date")
+    signal_date_str = "—" if pd.isna(signal_date) else pd.to_datetime(signal_date).date().isoformat()
+    st.markdown(
+        f"**{ticker}** · {sector_txt} · headlines from signal day **{signal_date_str}** "
+        f"drive the score traded on **{latest_trade_date.date().isoformat()}**"
+    )
+
+    m1, m2, m3, m4, m5 = st.columns(5)
+    m1.metric("Tradable score used today", f"{float(row.get('tradable_score', 0.0) or 0.0):+.3f}")
+    m2.metric("Raw sentiment (signal day)", f"{float(_get('sentiment', 0.0) or 0.0):+.3f}")
+    m3.metric("Coverage confidence", f"{float(_get('coverage_confidence', 0.0) or 0.0):.2f}")
+    pulse_val = _get("attention_pulse")
+    m4.metric("Attention pulse", "warm-up" if pd.isna(pulse_val) else f"{float(pulse_val):+.2f}")
+    m5.metric("Headlines (signal day)", str(int(_get("headline_count", 0) or 0)))
+
+    terms_val = _get("contributing_terms", "")
+    terms_txt = str(terms_val).strip() if isinstance(terms_val, str) else ""
+    if terms_txt:
+        chips = " ".join(f"`{t}`" for t in terms_txt.split("|") if t)
+        st.markdown(f"Finance terms and rules that contributed on the signal day: {chips}")
+    elif int(_get("headline_count", 0) or 0) > 0:
+        st.caption(
+            "No Signal Harbour-specific terms or phrase rules fired on the signal day — "
+            "the score comes from the Week 9 finVADER base lexicon alone."
+        )
+    else:
+        st.caption(
+            "No headlines on the signal day — the lagged tradable score defaults to neutral."
+        )
     display_cols = [
         c for c in [
             "ticker",
