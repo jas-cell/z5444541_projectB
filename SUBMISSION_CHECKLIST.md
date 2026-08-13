@@ -22,7 +22,6 @@ the mechanical ones.
 
 - [ ] Word editing pass on `report/report.docx` (open in Word, edit in my own words, save).
 - [ ] Export `report/report.pdf` from Word after that pass (replaces the script-generated PDF).
-- [ ] Add one AI-use acknowledgment line in the report (pointing to `ai/` for the full workflow pack).
 - [ ] Final dark-OS / local smoke: `streamlit run streamlit_app.py` and skim tabs.
 - [ ] Public GitHub repo + live Streamlit URL — follow `DEPLOY.md` (local `git` is initialised; push + Streamlit Cloud need your browser login).
 - [x] `kaiyuan_review_label` filled by me on all 120 rows (`positive` / `neutral` / `negative`).
