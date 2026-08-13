@@ -1,0 +1,5 @@
+method,role,source,used_in_trading,notes
+unchanged_vader,baseline,NLTK/vaderSentiment,False,Transparent social-media lexicon baseline (Week 8 starting point).
+week9_finvader,benchmark,FINS3645 Week 9 fear_greed_tools.build_finvader = PetrKorab FinVADER lexicons,False,SentiBigNomics*0.1 + Henry on NLTK VADER; lexicons vendored under src/vendor/course_finvader for Python 3.13.
+signal_harbour_context_weighted_finvader,primary_innovation,Week 9 finVADER base + Signal Harbour masks/terms/phrases + Attention Pulse + coverage confidence,True,"Augments the Week 9 analyser, then applies context weights and a one-session lag before fusion."
+hierarchical_risk_parity,researched_deferred,PyPortfolioOpt research,False,Deferred: weaker Part A continuity than context-weighted sentiment.

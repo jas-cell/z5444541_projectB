@@ -1,0 +1,367 @@
+{
+  "description": "Documented Signal Harbour lexicon/rule candidates for Project B. Valences use VADER's approximate -4..+4 scale. Every retained term has a source and reason. This is not a copy of FinVADER or Week 9 course files.",
+  "neutral_overrides": [
+    {
+      "text": "gross",
+      "action": "mask",
+      "source": "false-positive audit inspired by finance-aware VADER research; common in 'gross margin'",
+      "reason": "Generic VADER treats 'gross' as negative; in equity headlines it is usually accounting language.",
+      "retained": true
+    },
+    {
+      "text": "debt",
+      "action": "mask",
+      "source": "false-positive audit; 'debt refinancing' / 'debt offering'",
+      "reason": "Retired: blanket masking neutralised genuinely adverse 'debt' phrases (e.g. distress / plunge contexts).",
+      "retained": false
+    },
+    {
+      "text": "crude",
+      "action": "mask",
+      "source": "false-positive audit; energy headlines",
+      "reason": "Usually commodity reference ('crude oil'), not a pejorative.",
+      "retained": true
+    },
+    {
+      "text": "vice",
+      "action": "mask",
+      "source": "false-positive audit; 'vice president'",
+      "reason": "Corporate title fragment, not moral vice.",
+      "retained": true
+    }
+  ],
+  "phrases": [
+    {
+      "text": "beats expectations",
+      "valence": 2.4,
+      "source": "high-frequency earnings phrase in supplied headlines; LM positive neighbourhood",
+      "reason": "Directional earnings beat phrase that base VADER often under-weights as a unit.",
+      "retained": true
+    },
+    {
+      "text": "beats estimates",
+      "valence": 2.4,
+      "source": "corpus frequency audit; common earnings headline wording",
+      "reason": "Same directional beat signal as 'beats expectations' under the wording used most often in this dataset.",
+      "retained": true
+    },
+    {
+      "text": "misses expectations",
+      "valence": -2.4,
+      "source": "high-frequency earnings phrase",
+      "reason": "Directional earnings miss phrase.",
+      "retained": true
+    },
+    {
+      "text": "misses estimates",
+      "valence": -2.4,
+      "source": "corpus frequency audit",
+      "reason": "Common miss wording in the supplied headlines.",
+      "retained": true
+    },
+    {
+      "text": "missed estimates",
+      "valence": -2.4,
+      "source": "corpus frequency audit",
+      "reason": "Past-tense earnings miss phrase.",
+      "retained": true
+    },
+    {
+      "text": "beat estimates",
+      "valence": 2.4,
+      "source": "corpus frequency audit",
+      "reason": "Past-tense earnings beat phrase.",
+      "retained": true
+    },
+    {
+      "text": "raises guidance",
+      "valence": 2.2,
+      "source": "earnings-language audit",
+      "reason": "Forward-looking positive corporate update.",
+      "retained": true
+    },
+    {
+      "text": "cuts guidance",
+      "valence": -2.2,
+      "source": "earnings-language audit",
+      "reason": "Forward-looking negative corporate update.",
+      "retained": true
+    },
+    {
+      "text": "going concern",
+      "valence": -3.0,
+      "source": "finance distress phrase; LM negative neighbourhood",
+      "reason": "Severe accounting/distress signal often weakly captured by social VADER.",
+      "retained": true
+    },
+    {
+      "text": "share repurchase",
+      "valence": 1.2,
+      "source": "corporate-action phrase in corpus",
+      "reason": "Usually shareholder-friendly capital return language.",
+      "retained": true
+    },
+    {
+      "text": "stock split",
+      "valence": 0.8,
+      "source": "corporate-action phrase",
+      "reason": "Typically framed positively in retail headlines; mild valence only.",
+      "retained": true
+    },
+    {
+      "text": "profit falls",
+      "valence": -2.6,
+      "source": "earnings-language audit after Week 9 comparison",
+      "reason": "Directional profit decline; must not be flipped positive by residual VADER tokens.",
+      "retained": true
+    },
+    {
+      "text": "profits fall",
+      "valence": -2.6,
+      "source": "earnings-language audit",
+      "reason": "Plural form of profit-decline phrase.",
+      "retained": true
+    },
+    {
+      "text": "revenue down",
+      "valence": -2.2,
+      "source": "earnings-language audit",
+      "reason": "Explicit revenue decline phrase.",
+      "retained": true
+    },
+    {
+      "text": "shares plunge",
+      "valence": -2.4,
+      "source": "price-action phrase audit",
+      "reason": "Strong negative market-reaction phrase.",
+      "retained": true
+    },
+    {
+      "text": "profit plunge",
+      "valence": -2.6,
+      "source": "earnings-language audit",
+      "reason": "Severe earnings decline wording.",
+      "retained": true
+    }
+  ],
+  "terms": [
+    {
+      "text": "beat",
+      "valence": 1.6,
+      "source": "Project A top terms / earnings language",
+      "reason": "Earnings beat token frequently under-scored by base VADER alone.",
+      "retained": true
+    },
+    {
+      "text": "beats",
+      "valence": 1.6,
+      "source": "inflection of beat",
+      "reason": "Match plural/third-person earnings usage.",
+      "retained": true
+    },
+    {
+      "text": "miss",
+      "valence": -1.5,
+      "source": "earnings language",
+      "reason": "Earnings miss token.",
+      "retained": true
+    },
+    {
+      "text": "misses",
+      "valence": -1.5,
+      "source": "inflection of miss",
+      "reason": "Match plural/third-person earnings usage.",
+      "retained": true
+    },
+    {
+      "text": "upgrade",
+      "valence": 1.5,
+      "source": "analyst-action language",
+      "reason": "Analyst upgrades are directional for equities.",
+      "retained": true
+    },
+    {
+      "text": "upgraded",
+      "valence": 1.5,
+      "source": "analyst-action language",
+      "reason": "Past-tense upgrade.",
+      "retained": true
+    },
+    {
+      "text": "downgrade",
+      "valence": -1.6,
+      "source": "analyst-action language",
+      "reason": "Analyst downgrades are directional for equities.",
+      "retained": true
+    },
+    {
+      "text": "downgraded",
+      "valence": -1.6,
+      "source": "analyst-action language",
+      "reason": "Past-tense downgrade.",
+      "retained": true
+    },
+    {
+      "text": "outperform",
+      "valence": 1.4,
+      "source": "analyst recommendation language",
+      "reason": "Positive recommendation word under-weighted by social VADER.",
+      "retained": true
+    },
+    {
+      "text": "underperform",
+      "valence": -1.4,
+      "source": "analyst recommendation language",
+      "reason": "Negative recommendation word.",
+      "retained": true
+    },
+    {
+      "text": "lawsuit",
+      "valence": -1.8,
+      "source": "Project A LM negative neighbourhood / legal headlines",
+      "reason": "Legal risk language relevant to equities.",
+      "retained": true
+    },
+    {
+      "text": "probe",
+      "valence": -1.3,
+      "source": "regulatory headlines",
+      "reason": "Investigation language often false-neutral in base VADER.",
+      "retained": true
+    },
+    {
+      "text": "fraud",
+      "valence": -2.4,
+      "source": "LM negative / risk headlines",
+      "reason": "Severe misconduct signal.",
+      "retained": true
+    },
+    {
+      "text": "bankruptcy",
+      "valence": -2.8,
+      "source": "distress language",
+      "reason": "Extreme negative corporate event.",
+      "retained": true
+    },
+    {
+      "text": "dividend",
+      "valence": 0.9,
+      "source": "Project A frequent term",
+      "reason": "Often shareholder-friendly; mild because cuts also exist (phrase rules handle cuts).",
+      "retained": true
+    },
+    {
+      "text": "guidance",
+      "valence": 0.0,
+      "source": "candidate then rejected as unsigned",
+      "reason": "Unsigned without raise/cut; retained only via phrases.",
+      "retained": false
+    },
+    {
+      "text": "record",
+      "valence": 0.8,
+      "source": "common headline intensifier with profits/sales",
+      "reason": "Mild positive in 'record profit/sales' contexts.",
+      "retained": true
+    },
+    {
+      "text": "profit",
+      "valence": 1.0,
+      "source": "earnings language",
+      "reason": "Positive earnings noun frequently neutral under social VADER.",
+      "retained": true
+    },
+    {
+      "text": "profits",
+      "valence": 1.0,
+      "source": "earnings language",
+      "reason": "Plural form.",
+      "retained": true
+    },
+    {
+      "text": "loss",
+      "valence": -1.1,
+      "source": "earnings language",
+      "reason": "Negative earnings noun; still ambiguous in 'loss-making to profit' so moderate valence.",
+      "retained": true
+    },
+    {
+      "text": "losses",
+      "valence": -1.1,
+      "source": "earnings language",
+      "reason": "Plural form.",
+      "retained": true
+    },
+    {
+      "text": "layoff",
+      "valence": -1.7,
+      "source": "labour/restructuring headlines",
+      "reason": "Negative operational signal.",
+      "retained": true
+    },
+    {
+      "text": "layoffs",
+      "valence": -1.7,
+      "source": "labour/restructuring headlines",
+      "reason": "Plural form.",
+      "retained": true
+    },
+    {
+      "text": "buyback",
+      "valence": 1.2,
+      "source": "corporate-action language",
+      "reason": "Share repurchase shorthand.",
+      "retained": true
+    },
+    {
+      "text": "overweight",
+      "valence": 1.1,
+      "source": "analyst recommendation language",
+      "reason": "Positive recommendation code word.",
+      "retained": true
+    },
+    {
+      "text": "underweight",
+      "valence": -1.1,
+      "source": "analyst recommendation language",
+      "reason": "Negative recommendation code word.",
+      "retained": true
+    }
+  ],
+  "open_source_finvader_style_henry_terms": {
+    "note": "Small Henry-style directional set used only when the finvader package is unavailable. This is an open-source-style benchmark, NOT claimed to be the Week 9 course file and NOT claimed identical to PetrKorab/FinVADER's full lexicons.",
+    "scale_note": "Values already on a VADER-like scale; SentiBigNomics-like mass lexicon is intentionally not reconstructed.",
+    "terms": {
+      "positive": 1.5,
+      "negatives": -1.5,
+      "negative": -1.5,
+      "strong": 1.2,
+      "strength": 1.0,
+      "strengthen": 1.2,
+      "strengthened": 1.2,
+      "strengthening": 1.2,
+      "stronger": 1.1,
+      "weak": -1.2,
+      "weaken": -1.2,
+      "weakened": -1.2,
+      "weakening": -1.2,
+      "weaker": -1.1,
+      "improved": 1.2,
+      "improvement": 1.2,
+      "improving": 1.2,
+      "improve": 1.2,
+      "solid": 1.0,
+      "opportunity": 1.0,
+      "opportunities": 1.0,
+      "challenging": -1.0,
+      "challenges": -1.0,
+      "challenge": -1.0,
+      "disappointed": -1.4,
+      "disappointing": -1.4,
+      "risk": -0.8,
+      "risks": -0.8,
+      "uncertain": -1.0,
+      "uncertainty": -1.0
+    }
+  }
+}

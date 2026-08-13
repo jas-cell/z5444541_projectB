@@ -1,0 +1,47 @@
+kind,text,valence,source,reason,retained
+neutral_override,gross,,false-positive audit inspired by finance-aware VADER research; common in 'gross margin',Generic VADER treats 'gross' as negative; in equity headlines it is usually accounting language.,True
+neutral_override,debt,,false-positive audit; 'debt refinancing' / 'debt offering',Retired: blanket masking neutralised genuinely adverse 'debt' phrases (e.g. distress / plunge contexts).,False
+neutral_override,crude,,false-positive audit; energy headlines,"Usually commodity reference ('crude oil'), not a pejorative.",True
+neutral_override,vice,,false-positive audit; 'vice president',"Corporate title fragment, not moral vice.",True
+phrase,beats expectations,2.4,high-frequency earnings phrase in supplied headlines; LM positive neighbourhood,Directional earnings beat phrase that base VADER often under-weights as a unit.,True
+phrase,beats estimates,2.4,corpus frequency audit; common earnings headline wording,Same directional beat signal as 'beats expectations' under the wording used most often in this dataset.,True
+phrase,misses expectations,-2.4,high-frequency earnings phrase,Directional earnings miss phrase.,True
+phrase,misses estimates,-2.4,corpus frequency audit,Common miss wording in the supplied headlines.,True
+phrase,missed estimates,-2.4,corpus frequency audit,Past-tense earnings miss phrase.,True
+phrase,beat estimates,2.4,corpus frequency audit,Past-tense earnings beat phrase.,True
+phrase,raises guidance,2.2,earnings-language audit,Forward-looking positive corporate update.,True
+phrase,cuts guidance,-2.2,earnings-language audit,Forward-looking negative corporate update.,True
+phrase,going concern,-3.0,finance distress phrase; LM negative neighbourhood,Severe accounting/distress signal often weakly captured by social VADER.,True
+phrase,share repurchase,1.2,corporate-action phrase in corpus,Usually shareholder-friendly capital return language.,True
+phrase,stock split,0.8,corporate-action phrase,Typically framed positively in retail headlines; mild valence only.,True
+phrase,profit falls,-2.6,earnings-language audit after Week 9 comparison,Directional profit decline; must not be flipped positive by residual VADER tokens.,True
+phrase,profits fall,-2.6,earnings-language audit,Plural form of profit-decline phrase.,True
+phrase,revenue down,-2.2,earnings-language audit,Explicit revenue decline phrase.,True
+phrase,shares plunge,-2.4,price-action phrase audit,Strong negative market-reaction phrase.,True
+phrase,profit plunge,-2.6,earnings-language audit,Severe earnings decline wording.,True
+term,beat,1.6,Project A top terms / earnings language,Earnings beat token frequently under-scored by base VADER alone.,True
+term,beats,1.6,inflection of beat,Match plural/third-person earnings usage.,True
+term,miss,-1.5,earnings language,Earnings miss token.,True
+term,misses,-1.5,inflection of miss,Match plural/third-person earnings usage.,True
+term,upgrade,1.5,analyst-action language,Analyst upgrades are directional for equities.,True
+term,upgraded,1.5,analyst-action language,Past-tense upgrade.,True
+term,downgrade,-1.6,analyst-action language,Analyst downgrades are directional for equities.,True
+term,downgraded,-1.6,analyst-action language,Past-tense downgrade.,True
+term,outperform,1.4,analyst recommendation language,Positive recommendation word under-weighted by social VADER.,True
+term,underperform,-1.4,analyst recommendation language,Negative recommendation word.,True
+term,lawsuit,-1.8,Project A LM negative neighbourhood / legal headlines,Legal risk language relevant to equities.,True
+term,probe,-1.3,regulatory headlines,Investigation language often false-neutral in base VADER.,True
+term,fraud,-2.4,LM negative / risk headlines,Severe misconduct signal.,True
+term,bankruptcy,-2.8,distress language,Extreme negative corporate event.,True
+term,dividend,0.9,Project A frequent term,Often shareholder-friendly; mild because cuts also exist (phrase rules handle cuts).,True
+term,guidance,0.0,candidate then rejected as unsigned,Unsigned without raise/cut; retained only via phrases.,False
+term,record,0.8,common headline intensifier with profits/sales,Mild positive in 'record profit/sales' contexts.,True
+term,profit,1.0,earnings language,Positive earnings noun frequently neutral under social VADER.,True
+term,profits,1.0,earnings language,Plural form.,True
+term,loss,-1.1,earnings language,Negative earnings noun; still ambiguous in 'loss-making to profit' so moderate valence.,True
+term,losses,-1.1,earnings language,Plural form.,True
+term,layoff,-1.7,labour/restructuring headlines,Negative operational signal.,True
+term,layoffs,-1.7,labour/restructuring headlines,Plural form.,True
+term,buyback,1.2,corporate-action language,Share repurchase shorthand.,True
+term,overweight,1.1,analyst recommendation language,Positive recommendation code word.,True
+term,underweight,-1.1,analyst recommendation language,Negative recommendation code word.,True

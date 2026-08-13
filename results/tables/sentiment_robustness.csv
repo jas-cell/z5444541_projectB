@@ -1,0 +1,7 @@
+specification,analyser_base,n_headlines,mean_compound,share_neutral,share_exact_zero
+full_signal_harbour,week9_finvader,800,0.07252825,0.59,0.16625
+no_phrases,week9_finvader,800,0.070450125,0.5925,0.16625
+no_neutral_overrides,week9_finvader,800,0.07252825,0.59,0.16625
+no_custom_terms,week9_finvader,800,0.064477625,0.6225,0.17625
+week9_finvader_only,week9_finvader,800,0.062399500000000004,0.625,0.17875
+base_vader,plain_vader,800,0.08868275,0.51375,0.505
