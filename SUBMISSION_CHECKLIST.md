@@ -20,8 +20,7 @@ the mechanical ones.
 
 ## Still yours before hand-in
 
-- [ ] Word editing pass on `report/report.docx` (open in Word, edit in my own words, save).
-- [ ] Export `report/report.pdf` from Word after that pass (replaces the script-generated PDF).
+- [x] Editing pass on the report done by me in Google Docs (own words; label-validation, coverage, calendar and deployment corrections); revised `report/report.docx` and `report/report.pdf` exported from that document (see `ai/AI_ITERATION_LOG.md` Entry 12).
 - [ ] Final dark-OS / local smoke: `streamlit run streamlit_app.py` and skim tabs.
 - [x] Public GitHub repo: https://github.com/jas-cell/z5444541_projectB + live Streamlit URL: https://z5444541projectb-r9um2cjlkbqb35gndanq4f.streamlit.app/ (deployed from `main`, verified loading all five tabs with current `results/` data).
 - [x] `kaiyuan_review_label` filled by me on all 120 rows (`positive` / `neutral` / `negative`).
