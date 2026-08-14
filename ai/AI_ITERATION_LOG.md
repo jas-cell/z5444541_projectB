@@ -162,3 +162,7 @@ Entry 5 - Report typesetting (restored note): I drafted the report prose; the co
 | Diagnosis | Presentation and packaging gaps, not a modelling failure. |
 | Change | Pinned Streamlit light theme; replaced duplicate coverage figure with a real coverage figure; wrote `DEPLOY.md` and `git init` (no push — `gh` unavailable). Also hardened `scripts/check_handin.py` junk check to catch `~$` Office lock files. |
 | Verification | Coverage vs model-comparison MD5s differ; hand-in checker passes. Deploy URL still student-owned. |
+
+## Entry 12 - Report finalisation in Google Docs (13-14 August)
+
+I revised the assessed report myself in Google Docs: updated the label-validation passages to reflect the filled 120-row worksheet, added the coverage reading, and corrected the calendar and deployment statements. The coding assistant verified my draft's numbers against the `results/` CSVs, flagged factual regressions and typos, and I asked it for a grammar/flow review of my sentences; I paraphrased or accepted those suggestions, and the analysis and conclusions are my own.
