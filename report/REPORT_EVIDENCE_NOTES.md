@@ -23,25 +23,25 @@ This file is not the final report and is not a substitute for it. I author the a
 
 ### Best risk-adjusted fund
 
-- Combined Risk Parity has the highest Sharpe ratio at 0.871.
-- Its annualised return is 13.95% with annualised volatility of 16.02%.
-- Max drawdown is -19.85%, which is materially smaller than the drawdowns on the crypto-only funds.
+- Combined Risk Parity has the highest Sharpe ratio at 0.91.
+- Its annualised return is 14.3% with annualised volatility of 16.2%.
+- Max drawdown is -19.3%, which is materially smaller than the drawdowns on the crypto-only funds.
 
 Interpretation angle:
 This is the cleanest candidate for a client-facing flagship fund because it preserves most of the upside of the combined universe without inheriting the extreme drawdown profile of the crypto sleeve.
 
 ### Best raw-growth combined fund
 
-- Combined Maximum Sharpe has the highest terminal wealth among combined funds at 1.70x.
-- Annualised return is 19.37%, but volatility rises to 22.69% and max drawdown reaches -24.08%.
+- Combined Maximum Sharpe has the highest terminal wealth among combined funds at 1.55x.
+- Annualised return is 15.7%, but volatility rises to 23.3% and max drawdown reaches -26.2%.
 
 Interpretation angle:
 This fund earns its higher growth through concentration. It is a stronger option for a return-seeking investor, but it is harder to defend as the default recommendation because the path is rougher and the holdings are more concentrated.
 
 ### Equity-only comparison
 
-- Equity Equal Weight is the strongest equity-only baseline on Sharpe at 0.782.
-- Equity Risk Parity lowers volatility to 14.58% and drawdown to -18.53%, but its Sharpe remains below Equal Weight at 0.682.
+- Equity Equal Weight is the strongest equity-only baseline on Sharpe at 0.86.
+- Equity Risk Parity lowers volatility to 14.5% and drawdown to -18.4%, but its Sharpe remains below Equal Weight at 0.76.
 - Equity Maximum Sharpe underperforms the simpler alternatives in both Sharpe and drawdown.
 
 Interpretation angle:
@@ -49,9 +49,9 @@ Within the equity sleeve, the simple baseline is hard to beat. That matters beca
 
 ### Crypto-only comparison
 
-- Crypto Minimum Variance is the strongest crypto-only fund in this run, with annualised return of 45.02% and Sharpe of 0.641.
-- Crypto Maximum Sharpe performs poorly out of sample, with negative annualised return of -7.02% and Sharpe of -0.093.
-- All crypto-only funds carry very large drawdowns, from about -74% to -85%.
+- Crypto Minimum Variance is the strongest crypto-only fund in this run, with annualised return of 62.1% and Sharpe of 1.04.
+- Crypto Maximum Sharpe performs poorly out of sample, with negative annualised return of -2.7% even though its arithmetic Sharpe is 0.35.
+- All crypto-only funds carry very large drawdowns, from about -72% to -86%.
 
 Interpretation angle:
 Crypto diversification can lift returns, but the standalone crypto sleeve remains too volatile to present without a strong warning about drawdowns.
@@ -62,11 +62,11 @@ Crypto diversification can lift returns, but the standalone crypto sleeve remain
 
 Largest weights at the latest rebalance on 1 December 2023:
 
-- MRK: 3.75%
-- ABBV: 3.72%
-- WMT: 3.40%
-- KO: 3.24%
-- TMUS: 3.21%
+- MRK: 3.81%
+- ABBV: 3.74%
+- WMT: 3.37%
+- KO: 3.19%
+- TMUS: 3.17%
 
 Interpretation angle:
 The strongest Sharpe fund is diversified and defensive rather than momentum-chasing. That helps explain why it outperforms on risk-adjusted terms even though it does not post the highest raw return.
@@ -77,9 +77,9 @@ Largest weights at the latest rebalance on 1 December 2023:
 
 - GE: 25.00%
 - NVDA: 20.09%
-- SO: 16.81%
-- ADBE: 10.35%
-- BTC-USD: 10.30%
+- SO: 16.86%
+- ADBE: 10.32%
+- BTC-USD: 10.29%
 
 Interpretation angle:
 This portfolio is concentrated in a small set of assets with strong trailing realised behaviour. That concentration is exactly why the return is higher and the path risk is higher.
@@ -90,7 +90,7 @@ This portfolio is concentrated in a small set of assets with strong trailing rea
 - On a 4,000-headline sample:
   - base VADER: neutral 49.6%, exact zero 48.9%
   - Week 9 finVADER: neutral 62.1%, exact zero 17.4% (moves many exact zeros into small non-zero scores)
-  - Signal Harbour: neutral 46.3%, exact zero 45.5%, highest positive share 41.3%
+  - Signal Harbour: neutral 58.7%, exact zero 16.5%, positive share 29.8%
 - Week 9 finVADER is now the true course benchmark (SentiBigNomics*0.1 + Henry), not a Henry-only fallback.
 - Ablation: removing custom terms widens neutrality again; phrases contribute a smaller incremental effect on the sampled subset.
 - The displayed app series uses a 21-trading-day rolling average for readability, while the underlying file keeps the raw daily sector index.
@@ -113,7 +113,7 @@ Do not claim fusion uplift. The honest conclusion is that the lagged overlay sli
 
 Across the tested fixed grid:
 
-- Equal Weight plus a mild tilt of 0.15 gives the strongest fusion Sharpe at 0.779, but this remains below the un-tilted Equity Equal Weight baseline of 0.782.
+- Equal Weight plus a mild tilt of 0.15 gives the strongest fusion Sharpe at 0.853, but this remains below the un-tilted Equity Equal Weight baseline of 0.86.
 - Risk Parity plus sentiment also weakens slightly as tilt strength increases.
 - Minimum Variance plus sentiment is effectively flat across 0.15, 0.35, and 0.60.
 
